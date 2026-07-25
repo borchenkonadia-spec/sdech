@@ -1,24 +1,158 @@
+
+
+Library
+/
+
+other
+No file chosen
+other
+Search
+
+New
+
+All
+
+Images
+
+Documents
+
+
+Name
+Modified
+Size
+
+Library
+/
+other
+/
+index.html
+More actions
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>СДЭЧ — служба доставки заклинаний</title>
+<link rel="stylesheet" href="./styles.css">
+<style id="font-system">
+  @font-face {
+    font-family: 'Anticva';
+    src: url('./fonts/anticva.ttf') format('truetype');
+    font-weight: 400 700;
+    font-style: normal;
+    font-display: swap;
+  }
 
-  <title>СДЭЧ — служба доставки заклинаний</title>
+  @font-face {
+    font-family: 'Iosevka';
+    src: url('./fonts/iosevka-extended-regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
 
-  <link rel="stylesheet" href="./styles.css">
+  @font-face {
+    font-family: 'Iosevka';
+    src: url('./fonts/iosevka-extended-semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
 
-  <script
-    src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"
-    crossorigin="anonymous">
-  </script>
+  html,
+  body {
+    font-family: 'Iosevka', monospace;
+    font-weight: 400;
+    font-synthesis: none;
+  }
 
-  <script
-    src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"
-    crossorigin="anonymous">
-  </script>
-
-  <script src="./support.js"></script>
+  button,
+  input,
+  textarea,
+  select {
+    font-family: 'Iosevka', monospace !important;
+    font-synthesis: none;
+  }
+</style>
+<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+<script src="./support.js"></script>
 </head>
 <body>
 <x-dc>
@@ -35,7 +169,7 @@
 </helmet>
 <template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><rect width="200" height="200" fill="#000000"></rect><circle cx="100" cy="100" r="55" fill="none" stroke="#A5372B" stroke-width="6"></circle><text x="100" y="112" font-size="48" fill="#F2F0E9" text-anchor="middle" font-family="serif">С</text></svg></template>
 
-<div class="preloader" style="position: fixed; inset: 0; z-index: 99999; background: #000000; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 40px; font-family: 'Iosevka', system-ui, sans-serif;">
+<div class="preloader" style="position: fixed; inset: 0; z-index: 99999; background: #000000; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 40px; font-family: 'Iosevka', monospace;">
   <div style="position: absolute; inset: 0; background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22180%22%20height%3D%22180%22%3E%3Cfilter%20id%3D%22n%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.9%22%20numOctaves%3D%222%22%2F%3E%3CfeColorMatrix%20values%3D%220%200%200%200%201%200%200%200%200%201%200%200%200%200%201%200%200%200%200.5%200%22%2F%3E%3C%2Ffilter%3E%3Crect%20width%3D%22180%22%20height%3D%22180%22%20filter%3D%22url(%23n)%22%2F%3E%3C%2Fsvg%3E'); background-repeat: repeat; background-size: 180px 180px; mix-blend-mode: soft-light; opacity: 0.5; pointer-events: none;"></div>
 
   <div style="position: relative; z-index: 1; width: min(460px, 86vw); height: 62px;">
@@ -45,842 +179,4 @@
         <span style="width: 4px; height: 4px; border-radius: 50%; background: rgba(242,240,233,0.18); animation: pre-dot-fill .1s ease .045s forwards;"></span>
         <span style="width: 4px; height: 4px; border-radius: 50%; background: rgba(242,240,233,0.18); animation: pre-dot-fill .1s ease .09s forwards;"></span>
         <span style="width: 4px; height: 4px; border-radius: 50%; background: rgba(242,240,233,0.18); animation: pre-dot-fill .1s ease .135s forwards;"></span>
-        <span style="width: 4px; height: 4px; border-radius: 50%; background: rgba(242,240,233,0.18); animation: pre-dot-fill .1s ease .18s forwards;"></span>
-        <span style="width: 4px; height: 4px; border-radius: 50%; background: rgba(242,240,233,0.18); animation: pre-dot-fill .1s ease .225s forwards;"></span>
-        <span style="width: 4px; height: 4px; border-radius: 50%; background: rgba(242,240,233,0.18); animation: pre-dot-fill .1s ease .27s forwards;"></span>
-        <span style="width: 4px; height: 4px; border-radius: 50%; background: rgba(242,240,233,0.18); animation: pre-dot-fill .1s ease .315s forwards;"></span>
-        <span style="width: 4px; height: 4px; border-radius: 50%; background: rgba(242,240,233,0.18); animation: pre-dot-fill .1s ease .36s forwards;"></span>
-        <span style="width: 4px; height: 4px; border-radius: 50%; background: rgba(242,240,233,0.18); animation: pre-dot-fill .1s ease .405s forwards;"></span>
-      </div>
-      <span style="font-family: 'Iosevka', monospace; font-size: clamp(12px, 1.6vw, 14px); letter-spacing: 0.06em; color: #8A8A86;">Проверяем печати…</span>
-    </div>
-    <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; gap: 24px; opacity: 0; animation: pre-group-hold .57s linear .57s;">
-      <div style="display: flex; gap: 14px;">
-        <span style="width: 4px; height: 4px; border-radius: 50%; background: rgba(242,240,233,0.18); animation: pre-dot-fill .1s ease .57s forwards;"></span>
-        <span style="width: 4px; height: 4px; border-radius: 50%; background: rgba(242,240,233,0.18); animation: pre-dot-fill .1s ease .615s forwards;"></span>
-        <span style="width: 4px; height: 4px; border-radius: 50%; background: rgba(242,240,233,0.18); animation: pre-dot-fill .1s ease .66s forwards;"></span>
-        <span style="width: 4px; height: 4px; border-radius: 50%; background: rgba(242,240,233,0.18); animation: pre-dot-fill .1s ease .705s forwards;"></span>
-        <span style="width: 4px; height: 4px; border-radius: 50%; background: rgba(242,240,233,0.18); animation: pre-dot-fill .1s ease .75s forwards;"></span>
-        <span style="width: 4px; height: 4px; border-radius: 50%; background: rgba(242,240,233,0.18); animation: pre-dot-fill .1s ease .795s forwards;"></span>
-        <span style="width: 4px; height: 4px; border-radius: 50%; background: rgba(242,240,233,0.18); animation: pre-dot-fill .1s ease .84s forwards;"></span>
-        <span style="width: 4px; height: 4px; border-radius: 50%; background: rgba(242,240,233,0.18); animation: pre-dot-fill .1s ease .885s forwards;"></span>
-        <span style="width: 4px; height: 4px; border-radius: 50%; background: rgba(242,240,233,0.18); animation: pre-dot-fill .1s ease .93s forwards;"></span>
-        <span style="width: 4px; height: 4px; border-radius: 50%; background: rgba(242,240,233,0.18); animation: pre-dot-fill .1s ease .975s forwards;"></span>
-      </div>
-      <span style="font-family: 'Iosevka', monospace; font-size: clamp(12px, 1.6vw, 14px); letter-spacing: 0.06em; color: #8A8A86;">Комплектуем экспресс-чару…</span>
-    </div>
-    <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; gap: 24px; opacity: 0; animation: pre-group-hold .57s linear 1.14s;">
-      <div style="display: flex; gap: 14px;">
-        <span style="width: 4px; height: 4px; border-radius: 50%; background: rgba(242,240,233,0.18); animation: pre-dot-fill .1s ease 1.14s forwards;"></span>
-        <span style="width: 4px; height: 4px; border-radius: 50%; background: rgba(242,240,233,0.18); animation: pre-dot-fill .1s ease 1.185s forwards;"></span>
-        <span style="width: 4px; height: 4px; border-radius: 50%; background: rgba(242,240,233,0.18); animation: pre-dot-fill .1s ease 1.23s forwards;"></span>
-        <span style="width: 4px; height: 4px; border-radius: 50%; background: rgba(242,240,233,0.18); animation: pre-dot-fill .1s ease 1.275s forwards;"></span>
-        <span style="width: 4px; height: 4px; border-radius: 50%; background: rgba(242,240,233,0.18); animation: pre-dot-fill .1s ease 1.32s forwards;"></span>
-        <span style="width: 4px; height: 4px; border-radius: 50%; background: rgba(242,240,233,0.18); animation: pre-dot-fill .1s ease 1.365s forwards;"></span>
-        <span style="width: 4px; height: 4px; border-radius: 50%; background: rgba(242,240,233,0.18); animation: pre-dot-fill .1s ease 1.41s forwards;"></span>
-        <span style="width: 4px; height: 4px; border-radius: 50%; background: rgba(242,240,233,0.18); animation: pre-dot-fill .1s ease 1.455s forwards;"></span>
-        <span style="width: 4px; height: 4px; border-radius: 50%; background: rgba(242,240,233,0.18); animation: pre-dot-fill .1s ease 1.5s forwards;"></span>
-        <span style="width: 4px; height: 4px; border-radius: 50%; background: rgba(242,240,233,0.18); animation: pre-dot-fill .1s ease 1.545s forwards;"></span>
-      </div>
-      <span style="font-family: 'Iosevka', monospace; font-size: clamp(12px, 1.6vw, 14px); letter-spacing: 0.06em; color: #8A8A86;">Вызываем дежурную сову…</span>
-    </div>
-    <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; gap: 24px; opacity: 0; animation: pre-group-hold .57s linear 1.71s forwards;">
-      <div style="display: flex; gap: 14px;">
-        <span style="width: 4px; height: 4px; border-radius: 50%; background: rgba(242,240,233,0.18); animation: pre-dot-fill .1s ease 1.71s forwards;"></span>
-        <span style="width: 4px; height: 4px; border-radius: 50%; background: rgba(242,240,233,0.18); animation: pre-dot-fill .1s ease 1.755s forwards;"></span>
-        <span style="width: 4px; height: 4px; border-radius: 50%; background: rgba(242,240,233,0.18); animation: pre-dot-fill .1s ease 1.8s forwards;"></span>
-        <span style="width: 4px; height: 4px; border-radius: 50%; background: rgba(242,240,233,0.18); animation: pre-dot-fill .1s ease 1.845s forwards;"></span>
-        <span style="width: 4px; height: 4px; border-radius: 50%; background: rgba(242,240,233,0.18); animation: pre-dot-fill .1s ease 1.89s forwards;"></span>
-        <span style="width: 4px; height: 4px; border-radius: 50%; background: rgba(242,240,233,0.18); animation: pre-dot-fill .1s ease 1.935s forwards;"></span>
-        <span style="width: 4px; height: 4px; border-radius: 50%; background: rgba(242,240,233,0.18); animation: pre-dot-fill .1s ease 1.98s forwards;"></span>
-        <span style="width: 4px; height: 4px; border-radius: 50%; background: rgba(242,240,233,0.18); animation: pre-dot-fill .1s ease 2.025s forwards;"></span>
-        <span style="width: 4px; height: 4px; border-radius: 50%; background: rgba(242,240,233,0.18); animation: pre-dot-fill .1s ease 2.07s forwards;"></span>
-        <span style="width: 4px; height: 4px; border-radius: 50%; background: rgba(242,240,233,0.18); animation: pre-dot-fill .1s ease 2.115s forwards;"></span>
-      </div>
-      <span style="font-family: 'Iosevka', monospace; font-size: clamp(12px, 1.6vw, 14px); letter-spacing: 0.06em; color: #F2F0E9;">Допуск к чудесам оформлен.</span>
-    </div>
-  </div>
-</div>
 
-<div id="top" style="color: #F2F0E9; font-family: 'Iosevka', system-ui, sans-serif; display: flex; flex-direction: column; padding: 20px; position: relative; background-color: #000000; border-radius: 12px; padding-top: 16px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px">
-  <div style="position: absolute; inset: 0; background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22180%22%20height%3D%22180%22%3E%3Cfilter%20id%3D%22n%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.9%22%20numOctaves%3D%222%22%2F%3E%3CfeColorMatrix%20values%3D%220%200%200%200%201%200%200%200%200%201%200%200%200%200%201%200%200%200%200.5%200%22%2F%3E%3C%2Ffilter%3E%3Crect%20width%3D%22180%22%20height%3D%22180%22%20filter%3D%22url(%23n)%22%2F%3E%3C%2Fsvg%3E'); background-repeat: repeat; background-size: 180px 180px; mix-blend-mode: multiply; opacity: 0.1; pointer-events: none; z-index: 1; background-color: #000000; border-radius: 12px"></div>
-
-
-  <!-- NAV -->
-  <nav style="display: flex; align-items: center; justify-content: space-between; gap: 16px; max-width: 1280px; width: 100%; margin: 0 auto; padding: 16px 24px; position: relative; z-index: 3;">
-    <div style="display: flex; align-items: center; gap: 12px;">
-      <a href="#top" class="logo-lockup" style="display: flex; align-items: center; gap: 8px; text-decoration: none;">
-        <img src="./images/sdech-seal-icon.png" alt="СДЭЧ" style="width: 32px; height: 32px; flex-shrink: 0; object-fit: contain;">
-        <span style="display: flex; flex-direction: column; line-height: 1;">
-          <span class="logo-abbr" style="font-family: 'Anticva', serif; font-weight: 700; font-size: 20px; color: #F2F0E9; letter-spacing: 0.02em; transition: color .15s ease;">СДЭЧ</span>
-          
-        </span>
-      </a>
-    </div>
-    <div style="display: flex; align-items: center; gap: 24px;" class="nav-links">
-      <a href="#catalog" style="font-family: 'Iosevka', monospace; font-size: 13px; color: #F2F0E9;" style-hover="color: #A5372B;">Каталог</a>
-      <a href="#quiz" style="font-family: 'Iosevka', monospace; font-size: 13px; color: #F2F0E9;" style-hover="color: #A5372B;">Как это работает</a>
-      <a href="#pricing" style="font-family: 'Iosevka', monospace; font-size: 13px; color: #F2F0E9;" style-hover="color: #A5372B;">Тарифы</a>
-      <a href="#pricing" style="font-family: 'Iosevka', monospace; font-size: 14px; color: #F2F0E9; border: 1px solid rgba(242,240,233,0.25); padding: 8px 16px; border-radius: 4px" style-hover="border-color: #A5372B; color: #A5372B;">Оформить</a>
-    </div>
-    <button aria-label="Меню" class="nav-burger" style="display: none; background: none; border: 1px solid rgba(242,240,233,0.25); border-radius: 8px; width: 40px; height: 40px; cursor: pointer; color: #F2F0E9; align-items: center; justify-content: center;">
-      <svg width="18" height="18" viewBox="0 0 24 24" stroke="#F2F0E9" stroke-width="1.5"><line x1="3" y1="7" x2="21" y2="7"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="17" x2="21" y2="17"></line></svg>
-    </button>
-  </nav>
-
-  <!-- HERO (centered) -->
-    <div style="display: flex; flex-direction: column; align-items: center; justify-content: flex-start; text-align: center; max-width: 1280px; width: 100%; margin: 0 auto; padding: clamp(64px, 8vw, 96px) 24px 0; position: relative; z-index: 2;">
-    <h1 class="grad-heading hero-intro" style="display: flex; flex-direction: column; align-items: center; position: relative; z-index: 2; font-family: 'Anticva', serif; font-weight: 400; letter-spacing: -1px; font-size: clamp(40px, 7vw, 88px); line-height: 1;"><span style="display: block; white-space: nowrap; line-height: 1.3">СЛУЖБА ДОСТАВКИ</span><span style="display: block; white-space: nowrap; line-height: 0.8">ЭКСПРЕСС-ЧАР</span></h1><p class="hero-intro" style="font-family: 'Iosevka', monospace; color: #8A8A86; font-size: clamp(15px, 1.8vw, 18px); line-height: 1.55; margin-top: 16px; max-width: 600px; position: relative; z-index: 2">Оформляем по всем правилам. Доставляем в тот же вечер.</p><div class="hero-intro" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; margin-top: 40px; position: relative; z-index: 2">
-      <a href="#quiz" class="hero-btn fill-btn" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-family: 'Iosevka', sans-serif; font-weight: 600; font-size: 18px; background: #F2F0E9; color: #000000; border: none; padding: 16px 24px; border-radius: 8px; cursor: pointer; text-decoration: none; transition: transform 0.08s ease, color 0.15s ease" style-active="transform: scale(0.97);">Подобрать заклинание<svg width="26" height="26" viewBox="0 0 24 24" fill="none" style="flex-shrink: 0;"><path d="M11 5C11 5.742 11.733 6.85 12.475 7.78C13.429 8.98 14.569 10.027 15.876 10.826C16.856 11.425 18.044 12 19 12M19 12C18.044 12 16.855 12.575 15.876 13.174C14.569 13.974 13.429 15.021 12.475 16.219C11.733 17.15 11 18.26 11 19M19 12H6M6 10V14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
-      <a href="#catalog" class="hero-btn" style="display: inline-flex; align-items: center; justify-content: center; font-family: 'Iosevka', sans-serif; font-weight: 600; font-size: 18px; background: transparent; color: #F2F0E9; border: 1px solid rgba(242,240,233,0.3); padding: 16px 24px; border-radius: 8px; cursor: pointer; text-decoration: none; transition: transform 0.08s ease, border-color 0.15s ease, color 0.15s ease" style-hover="border-color: #A5372B; color: #A5372B;" style-active="transform: scale(0.97);">Открыть каталог</a>
-    </div>
-    <p class="hero-intro" style="display: inline-flex; align-items: center; gap: 6px; font-family: 'Iosevka', monospace; color: #6E6E6E; font-size: 12px; line-height: 1.5; margin-top: 16px; letter-spacing: 0.01em; position: relative; z-index: 2"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" style="flex-shrink: 0;"><path d="M5 14L9 17L18 6" stroke="#3BA55D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>Работает с 1372 года</p>
-  </div>
-  <img src="./images/gif-mrzcjl5g-i2ir.gif" alt="Сова с посылкой" class="hero-owl" style="position: relative; z-index: 0; width: 100%; max-width: 884px; height: auto; object-fit: contain; display: block; margin: 24px auto 0;">
-</div>
-
-<div style="height: 14px; background-image: radial-gradient(circle, rgba(242,240,233,0.18) 1.6px, transparent 3px); background-size: 18px 14px; background-position: center; background-repeat: repeat-x; position: relative; z-index: 1; margin: 32px auto; width: 1280px; max-width: 100%; margin-top: 64px; margin-bottom: 64px"></div>
-
-<!-- CATALOG BLOCK -->
-<section id="catalog" style="scroll-margin-top: 20px; background: #000000; color: #F2F0E9; font-family: 'Iosevka', system-ui, sans-serif; padding: 80px 24px; position: relative; overflow: hidden;">
-  <div style="position: absolute; inset: 0; background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22180%22%20height%3D%22180%22%3E%3Cfilter%20id%3D%22n%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.9%22%20numOctaves%3D%222%22%2F%3E%3CfeColorMatrix%20values%3D%220%200%200%200%201%200%200%200%200%201%200%200%200%200%201%200%200%200%200.5%200%22%2F%3E%3C%2Ffilter%3E%3Crect%20width%3D%22180%22%20height%3D%22180%22%20filter%3D%22url(%23n)%22%2F%3E%3C%2Fsvg%3E'); background-repeat: repeat; background-size: 180px 180px; mix-blend-mode: multiply; opacity: 0.1; pointer-events: none; z-index: 0;"></div>
-  <div style="max-width: 1280px; margin: 0 auto; padding: 0 8px; position: relative; z-index: 1;">
-
-    <!-- header -->
-    <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 16px">
-      <div data-reveal="">
-        <h2 class="grad-heading" style="font-family: 'Anticva', serif; font-weight: 400; letter-spacing: -1px; text-transform: uppercase; font-size: clamp(32px, 4.5vw, 56px); line-height: 1.05; text-align: center">Каталог</h2>
-        <p style="font-family: 'Iosevka', monospace; color: #8A8A86; font-size: clamp(13px, 1.4vw, 15px); margin-top: 16px; text-align: center">Все позиции заклинаний сертифицированы и готовы к отправке</p>
-      </div>
-    </div>
-
-    <!-- filters -->
-    <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 48px; justify-content: center; align-items: center">
-      <sc-for list="{{ filters }}" as="f" hint-placeholder-count="5">
-        <button onClick="{{ f.select }}" class="{{ f.cls }}" style="{{ f.style }}">{{ f.display }}</button>
-      </sc-for>
-    </div>
-
-    <!-- grid -->
-    <div class="cat-grid" ref="{{ catTrackRef }}" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 56px">
-      <sc-for list="{{ cards }}" as="card" hint-placeholder-count="6">
-        <div class="folder">
-          <div data-reveal="" style="display: flex; flex-direction: column; flex: 1; transition-delay: {{ card.revealDelay }};">
-          <div class="folder-tab" style="align-self: flex-start; margin-left: {{ card.tabOffset }}; margin-bottom: -1px; position: relative; z-index: 1; background: #161514; border: none; border-bottom: none; border-radius: 12px 12px 0 0; padding: 8px 16px; font-family: 'Iosevka', monospace; font-size: 12px; font-weight: 600; letter-spacing: 0.06em; color: #858585; padding-top: 12px">{{ card.category }}</div>
-          <div class="folder-body" style="position: relative; display: flex; flex-direction: column; flex: 1; background: #161514; border: none; border-radius: 0 12px 12px 12px; padding: 24px; min-height: 215px; padding-top: 32px; padding-right: 32px; padding-bottom: 32px; padding-left: 32px">
-            <span class="c-stamp" data-stamp="" style="{{ card.stampStyle }}">{{ card.stamp }}</span>
-            <h3 class="c-name" style="font-family: 'Anticva', serif; font-weight: 400; letter-spacing: -0.7px; text-transform: uppercase; font-size: 24px; line-height: 1; padding-right: 108px">{{ card.name }}</h3>
-            <p class="c-line" style="font-family: 'Iosevka', monospace; font-size: 14px; line-height: 1.5; color: #B6B6B6; margin-top: 16px"><span style="opacity: 0.7; color: #858585">Когда:</span> {{ card.when }}</p>
-            <p class="c-line" style="font-family: 'Iosevka', monospace; font-size: 14px; line-height: 1.5; color: #B6B6B6; margin-top: 8px; margin-bottom: 16px"><span style="opacity: 0.7; color: #858585">Эффект:</span> {{ card.effect }}</p>
-            <div class="c-perf" style="margin-top: auto; height: 14px; background-image: radial-gradient(circle, rgba(242,240,233,0.18) 1.6px, transparent 2px); background-size: 18px 14px; background-position: left center; background-repeat: repeat-x;"></div>
-            <div style="padding-top: 16px; display: flex; align-items: center; justify-content: space-between; gap: 16px;">
-              <div style="display: flex; align-items: center; gap: 8px;">
-                <svg class="c-meta" width="14" height="14" viewBox="0 0 16 16" fill="none" style="color: #8A8A86; flex-shrink: 0;"><path d="M2.75 1H13.25C13.4489 1 13.6397 1.07902 13.7803 1.21967C13.921 1.36032 14 1.55109 14 1.75C14 1.94891 13.921 2.13968 13.7803 2.28033C13.6397 2.42098 13.4489 2.5 13.25 2.5H12.5V3.75C12.5 4.48741 12.3283 5.2147 11.9985 5.87426C11.6687 6.53383 11.1899 7.10755 10.6 7.55L10.267 7.8C10.236 7.82329 10.2107 7.85348 10.1934 7.8882C10.176 7.92291 10.167 7.96119 10.167 8C10.167 8.03881 10.176 8.07709 10.1934 8.1118C10.2107 8.14652 10.236 8.17671 10.267 8.2L10.6 8.45C11.1899 8.89245 11.6687 9.46617 11.9985 10.1257C12.3283 10.7853 12.5 11.5126 12.5 12.25V13.5H13.25C13.4489 13.5 13.6397 13.579 13.7803 13.7197C13.921 13.8603 14 14.0511 14 14.25C14 14.4489 13.921 14.6397 13.7803 14.7803C13.6397 14.921 13.4489 15 13.25 15H2.75C2.55109 15 2.36032 14.921 2.21967 14.7803C2.07902 14.6397 2 14.4489 2 14.25C2 14.0511 2.07902 13.8603 2.21967 13.7197C2.36032 13.579 2.55109 13.5 2.75 13.5H3.5V12.25C3.5 11.5126 3.67169 10.7853 4.00147 10.1257C4.33125 9.46617 4.81007 8.89245 5.4 8.45L5.733 8.2C5.76405 8.17671 5.78925 8.14652 5.80661 8.1118C5.82396 8.07709 5.833 8.03881 5.833 8C5.833 7.96119 5.82396 7.92291 5.80661 7.8882C5.78925 7.85348 5.76405 7.82329 5.733 7.8L5.4 7.55C4.81007 7.10755 4.33125 6.53383 4.00147 5.87426C3.67169 5.2147 3.5 4.48741 3.5 3.75V2.5H2.75C2.55109 2.5 2.36032 2.42098 2.21967 2.28033C2.07902 2.13968 2 1.94891 2 1.75C2 1.55109 2.07902 1.36032 2.21967 1.21967C2.36032 1.07902 2.55109 1 2.75 1ZM11 2.5H5V3.75C5 4.773 5.482 5.736 6.3 6.35L6.633 6.6C7.567 7.3 7.567 8.7 6.633 9.4L6.3 9.65C5.89636 9.95273 5.56875 10.3453 5.34311 10.7966C5.11747 11.2478 5 11.7455 5 12.25V13.5H11V12.25C11 11.7455 10.8825 11.2478 10.6569 10.7966C10.4312 10.3453 10.1036 9.95273 9.7 9.65L9.367 9.4C9.1493 9.23724 8.97255 9.02595 8.8508 8.78292C8.72905 8.53989 8.66566 8.27182 8.66566 8C8.66566 7.72818 8.72905 7.46011 8.8508 7.21708C8.97255 6.97405 9.1493 6.76276 9.367 6.6L9.7 6.35C10.1036 6.04727 10.4312 5.65472 10.6569 5.20344C10.8825 4.75216 11 4.25455 11 3.75V2.5Z" fill="currentColor"></path></svg>
-                <span class="c-meta" style="font-family: 'Iosevka', monospace; font-size: 12px; color: #8A8A86">{{ card.delivery }}</span>
-              </div>
-              <a href="#pricing" class="c-order" style="display: inline-flex; align-items: center; gap: 6px; font-family: 'Iosevka'; font-size: 16px; color: #A5372B; opacity: 1; white-space: nowrap; font-weight: 900; line-height: 0; text-decoration: none; cursor: pointer">Заказать<svg width="24" height="24" viewBox="0 0 24 24" fill="none" style="flex-shrink: 0;"><path d="M11 5C11 5.742 11.733 6.85 12.475 7.78C13.429 8.98 14.569 10.027 15.876 10.826C16.856 11.425 18.044 12 19 12M19 12C18.044 12 16.855 12.575 15.876 13.174C14.569 13.974 13.429 15.021 12.475 16.219C11.733 17.15 11 18.26 11 19M19 12H6M6 10V14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
-            </div>
-          </div>
-          </div>
-        </div>
-      </sc-for>
-    </div>
-
-    <div class="cat-dots" style="display: none; justify-content: center; gap: 8px; margin-top: 24px;">
-      <sc-for list="{{ catDots }}" as="d" hint-placeholder-count="6">
-        <span style="{{ d.style }}"></span>
-      </sc-for>
-    </div>
-
-  </div>
-</section>
-
-<!-- WIZARD BLOCK -->
-<section id="quiz" style="scroll-margin-top: 20px; background: #000000; font-family: 'Iosevka', system-ui, sans-serif; padding: 80px 24px;">
-  <div class="quiz-card spark-light" style="max-width: 1280px; margin: 0 auto; color: #241D14; border-radius: 12px; padding: 48px 24px; position: relative; overflow: hidden; background-color: #FFECD3">
-  <div style="position: absolute; inset: 0; background-image: url('./images/paper-texture.jpg'); background-size: cover; background-position: center; mix-blend-mode: multiply; opacity: 0.5; pointer-events: none; z-index: 0;"></div>
-  <div style="position: absolute; inset: 0; background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22180%22%20height%3D%22180%22%3E%3Cfilter%20id%3D%22n%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.9%22%20numOctaves%3D%222%22%2F%3E%3CfeColorMatrix%20values%3D%220%200%200%200%201%200%200%200%200%201%200%200%200%200%201%200%200%200%200.5%200%22%2F%3E%3C%2Ffilter%3E%3Crect%20width%3D%22180%22%20height%3D%22180%22%20filter%3D%22url(%23n)%22%2F%3E%3C%2Fsvg%3E'); background-repeat: repeat; background-size: 180px 180px; mix-blend-mode: multiply; opacity: 0.1; pointer-events: none; z-index: 0;"></div>
-  <div data-reveal="" style="margin: 0 auto; padding: 0 8px; text-align: center; position: relative; z-index: 1; display: flex; flex-direction: column; justify-content: center; align-items: center">
-    <h2 style="font-family: 'Anticva', serif; font-weight: 400; letter-spacing: -1px; text-transform: uppercase; font-size: clamp(30px, 4.2vw, 56px); line-height: 0.85; color: #241D14; width: 800px">Не знаете, что выбрать?</h2>
-    <p style="font-family: 'Iosevka', monospace; color: #7C6F57; font-size: clamp(13px, 1.4vw, 15px); margin-top: 16px">Заполните заявку — подберём за минуту</p>
-  </div>
-
-  <div style="max-width: 640px; margin: 48px auto 0; padding: 0 8px; position: relative; z-index: 1;">
-    <!-- tab -->
-    <div style="display: inline-block; margin-left: 0; margin-bottom: -1px; position: relative; z-index: 1; background: #F5EFE0; border: 1px solid #D8C9A6; border-bottom: none; border-radius: 12px 12px 0 0; padding: 8px 16px; font-family: 'Iosevka', monospace; font-size: 11px; font-weight: 600; letter-spacing: 0.08em; color: #A5372B; padding-top: 12px; padding-bottom: 8px; padding-left: 16px; padding-right: 16px">{{ w.tab }}</div>
-
-    <div style="background: #F5EFE0; border: 1px solid #D8C9A6; border-radius: 0 12px 12px 12px; box-shadow: 0 18px 50px rgba(36,29,20,0.12); overflow: hidden;">
-      
-      <div style="height: 10px; background-image: radial-gradient(circle, #B8A47C 1.6px, transparent 2px); background-size: 14px 10px; background-position: center; background-repeat: repeat-x; margin-top: 16px; margin-bottom: 8px; margin-left: 16px; margin-right: 16px; padding-left: 0px; padding-right: 0px; padding-top: 0px; padding-bottom: 0px; opacity: 0.5"></div><div style="padding: 28px; padding-top: 32px; padding-right: 32px; padding-bottom: 32px; padding-left: 32px">
-      <!-- step indicator -->
-      <div style="display: flex; gap: 8px; margin-bottom: 32px">
-        <sc-for list="{{ w.dots }}" as="d" hint-placeholder-count="4">
-          <span style="{{ d.style }}"></span>
-        </sc-for>
-      </div>
-
-      <!-- STEP 1 -->
-      <sc-if value="{{ w.isStep1 }}" hint-placeholder-val="{{ true }}">
-        <div>
-          <h3 style="font-family: 'Anticva', serif; font-weight: 400; letter-spacing: -1px; text-transform: uppercase; font-size: clamp(22px, 3vw, 32px); color: #241D14">Что у вас стряслось?</h3>
-          <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 24px;">
-            <sc-for list="{{ w.probs }}" as="p" hint-placeholder-count="4">
-              <button onClick="{{ p.select }}" style="{{ p.rowStyle }}">
-                <span style="{{ p.dotOuter }}"><span style="{{ p.dotInner }}"></span></span>
-                <span style="font-family: 'Iosevka', sans-serif; font-size: 16px; color: #241D14;">{{ p.label }}</span>
-              </button>
-            </sc-for>
-          </div>
-          <button onClick="{{ w.next1 }}" style="{{ w.next1Style }}"><span style="display: inline-flex; align-items: center; gap: 8px;">Далее<svg width="24" height="24" viewBox="0 0 24 24" fill="none" style="flex-shrink: 0;"><path d="M11 5C11 5.742 11.733 6.85 12.475 7.78C13.429 8.98 14.569 10.027 15.876 10.826C16.856 11.425 18.044 12 19 12M19 12C18.044 12 16.855 12.575 15.876 13.174C14.569 13.974 13.429 15.021 12.475 16.219C11.733 17.15 11 18.26 11 19M19 12H6M6 10V14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></button>
-        </div>
-      </sc-if>
-
-      <!-- STEP 2 -->
-      <sc-if value="{{ w.isStep2 }}" hint-placeholder-val="{{ false }}">
-        <div>
-          <h3 style="font-family: 'Anticva', serif; font-weight: 400; letter-spacing: -1px; text-transform: uppercase; font-size: clamp(22px, 3vw, 28px); ">Вам подойдёт:</h3>
-          <div style="margin-top: 24px; display: flex; flex-direction: column;">
-            <div style="align-self: flex-start; margin-bottom: -1px; position: relative; z-index: 1; background: #FBF7EC; border: 1px solid #D8C9A6; border-bottom: none; border-radius: 12px 12px 0 0; padding: 8px 16px; font-family: 'Iosevka', monospace; font-size: 11px; font-weight: 600; letter-spacing: 0.06em; color: #A29883">{{ w.rec.cat }}</div>
-            <div style="background: #FBF7EC; border: 1px solid #D8C9A6; border-radius: 0 12px 12px 12px; padding: 24px; position: relative;">
-              <span data-stamp="" style="position: absolute; top: 16px; right: 16px; font-family: 'Iosevka', monospace; font-size: 10px; font-weight: 600; letter-spacing: 0.16em; color: #3BA55D; border: 1px solid #3BA55D; border-radius: 4px; padding: 8px 8px; opacity: 0.85; transform: rotate(-6deg); animation: stamp-press .4s cubic-bezier(0.34,1.56,0.64,1) both;">В НАЛИЧИИ</span>
-              <div style="font-family: 'Anticva', serif; font-weight: 400; text-transform: uppercase; letter-spacing: -1px; font-size: 26px; line-height: 1.1; padding-right: 96px; color: #241D14;">{{ w.rec.name }}</div>
-              <p style="font-family: 'Iosevka', monospace; font-size: 12.5px; line-height: 1.5; color: #7C6F57; margin-top: 16px;"><span style="opacity: 0.7;">Эффект:</span> {{ w.rec.effect }}</p>
-              <p style="display: flex; align-items: center; gap: 8px; font-family: 'Iosevka', monospace; font-size: 12.5px; color: #7C6F57; margin-top: 8px;"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" style="color: #7C6F57; flex-shrink: 0;"><path d="M2.75 1H13.25C13.4489 1 13.6397 1.07902 13.7803 1.21967C13.921 1.36032 14 1.55109 14 1.75C14 1.94891 13.921 2.13968 13.7803 2.28033C13.6397 2.42098 13.4489 2.5 13.25 2.5H12.5V3.75C12.5 4.48741 12.3283 5.2147 11.9985 5.87426C11.6687 6.53383 11.1899 7.10755 10.6 7.55L10.267 7.8C10.236 7.82329 10.2107 7.85348 10.1934 7.8882C10.176 7.92291 10.167 7.96119 10.167 8C10.167 8.03881 10.176 8.07709 10.1934 8.1118C10.2107 8.14652 10.236 8.17671 10.267 8.2L10.6 8.45C11.1899 8.89245 11.6687 9.46617 11.9985 10.1257C12.3283 10.7853 12.5 11.5126 12.5 12.25V13.5H13.25C13.4489 13.5 13.6397 13.579 13.7803 13.7197C13.921 13.8603 14 14.0511 14 14.25C14 14.4489 13.921 14.6397 13.7803 14.7803C13.6397 14.921 13.4489 15 13.25 15H2.75C2.55109 15 2.36032 14.921 2.21967 14.7803C2.07902 14.6397 2 14.4489 2 14.25C2 14.0511 2.07902 13.8603 2.21967 13.7197C2.36032 13.579 2.55109 13.5 2.75 13.5H3.5V12.25C3.5 11.5126 3.67169 10.7853 4.00147 10.1257C4.33125 9.46617 4.81007 8.89245 5.4 8.45L5.733 8.2C5.76405 8.17671 5.78925 8.14652 5.80661 8.1118C5.82396 8.07709 5.833 8.03881 5.833 8C5.833 7.96119 5.82396 7.92291 5.80661 7.8882C5.78925 7.85348 5.76405 7.82329 5.733 7.8L5.4 7.55C4.81007 7.10755 4.33125 6.53383 4.00147 5.87426C3.67169 5.2147 3.5 4.48741 3.5 3.75V2.5H2.75C2.55109 2.5 2.36032 2.42098 2.21967 2.28033C2.07902 2.13968 2 1.94891 2 1.75C2 1.55109 2.07902 1.36032 2.21967 1.21967C2.36032 1.07902 2.55109 1 2.75 1ZM11 2.5H5V3.75C5 4.773 5.482 5.736 6.3 6.35L6.633 6.6C7.567 7.3 7.567 8.7 6.633 9.4L6.3 9.65C5.89636 9.95273 5.56875 10.3453 5.34311 10.7966C5.11747 11.2478 5 11.7455 5 12.25V13.5H11V12.25C11 11.7455 10.8825 11.2478 10.6569 10.7966C10.4312 10.3453 10.1036 9.95273 9.7 9.65L9.367 9.4C9.1493 9.23724 8.97255 9.02595 8.8508 8.78292C8.72905 8.53989 8.66566 8.27182 8.66566 8C8.66566 7.72818 8.72905 7.46011 8.8508 7.21708C8.97255 6.97405 9.1493 6.76276 9.367 6.6L9.7 6.35C10.1036 6.04727 10.4312 5.65472 10.6569 5.20344C10.8825 4.75216 11 4.25455 11 3.75V2.5Z" fill="currentColor"></path></svg>{{ w.rec.delivery }}</p>
-            </div>
-          </div>
-          <p style="font-family: 'Iosevka', monospace; font-size: 11px; color: #7C6F57; margin-top: 16px;">Совпадение по ситуации — 98%</p>
-          <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px;">
-            <button onClick="{{ w.toStep3 }}" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; flex: 1; min-width: 160px; font-family: 'Iosevka', sans-serif; font-weight: 600; font-size: 15px; background: #241D14; color: #F5EFE0; border: none; padding: 15px; border-radius: 8px; cursor: pointer; transition: transform .08s ease, background .15s ease;" style-hover="background: #3A2E1F;" style-active="transform: scale(0.98);">Оформить заказ<svg width="24" height="24" viewBox="0 0 24 24" fill="none" style="flex-shrink: 0;"><path d="M11 5C11 5.742 11.733 6.85 12.475 7.78C13.429 8.98 14.569 10.027 15.876 10.826C16.856 11.425 18.044 12 19 12M19 12C18.044 12 16.855 12.575 15.876 13.174C14.569 13.974 13.429 15.021 12.475 16.219C11.733 17.15 11 18.26 11 19M19 12H6M6 10V14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
-            <button onClick="{{ w.back1 }}" style="font-family: 'Iosevka', monospace; font-size: 13px; background: transparent; color: #7C6F57; border: 1px solid #D8C9A6; padding: 16px; border-radius: 8px; cursor: pointer; transition: color .15s ease, border-color .15s ease;" style-hover="color: #241D14; border-color: #241D14;">Выбрать другое</button>
-          </div>
-        </div>
-      </sc-if>
-
-      <!-- STEP 3 -->
-      <sc-if value="{{ w.isStep3 }}" hint-placeholder-val="{{ false }}">
-        <div>
-          <h3 style="font-family: 'Anticva', serif; font-weight: 400; letter-spacing: -1px; text-transform: uppercase; font-size: clamp(22px, 3vw, 28px); ">Оформление доставки</h3>
-          <div style="margin-top: 24px; display: flex; flex-direction: column; gap: 16px;">
-            <div>
-              <label style="display: block; font-family: 'Iosevka', monospace; font-size: 11px; letter-spacing: 0.06em; color: #7C6F57; margin-bottom: 8px;">ИМЯ ПОЛУЧАТЕЛЯ</label>
-              <input value="{{ w.name }}" onInput="{{ w.onName }}" placeholder="Как к вам обращаться" style="{{ w.nameFieldStyle }}">
-              <sc-if value="{{ w.nameErr }}" hint-placeholder-val="{{ false }}">
-                <p style="font-family: 'Iosevka', monospace; font-size: 11px; color: #A5372B; margin-top: 8px;">Укажите имя получателя</p>
-              </sc-if>
-            </div>
-            <div>
-              <label style="display: block; font-family: 'Iosevka', monospace; font-size: 11px; letter-spacing: 0.06em; color: #7C6F57; margin-bottom: 8px;">КУДА ДОСТАВИТЬ</label>
-              <input value="{{ w.addr }}" onInput="{{ w.onAddr }}" placeholder="Адрес или «портал»" style="{{ w.addrFieldStyle }}">
-              <sc-if value="{{ w.addrErr }}" hint-placeholder-val="{{ false }}">
-                <p style="font-family: 'Iosevka', monospace; font-size: 11px; color: #A5372B; margin-top: 8px;">Укажите, куда доставить</p>
-              </sc-if>
-            </div>
-            <div>
-              <label style="display: block; font-family: 'Iosevka', monospace; font-size: 11px; letter-spacing: 0.06em; color: #7C6F57; margin-bottom: 8px;">КЛАСС СРОЧНОСТИ</label>
-              <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-                <sc-for list="{{ w.urg }}" as="u" hint-placeholder-count="3">
-                  <button onClick="{{ u.select }}" style="{{ u.style }}"><span style="opacity: 0.6; margin-right: 4px;">{{ u.roman }}</span>{{ u.label }}</button>
-                </sc-for>
-              </div>
-            </div>
-          </div>
-          <p style="font-family: 'Iosevka', monospace; font-size: 10.5px; line-height: 1.55; color: #7C6F57; margin-top: 24px; opacity: 0.8;">Оформляя заказ, вы соглашаетесь с Регламентом. Служба не несёт ответственности за заклинания, применённые не по назначению.</p>
-          <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px;">
-            <button onClick="{{ w.submit }}" style="{{ w.submitStyle }}"><span style="display: inline-flex; align-items: center; gap: 8px;">Подтвердить заказ<svg width="24" height="24" viewBox="0 0 24 24" fill="none" style="flex-shrink: 0;"><path d="M11 5C11 5.742 11.733 6.85 12.475 7.78C13.429 8.98 14.569 10.027 15.876 10.826C16.856 11.425 18.044 12 19 12M19 12C18.044 12 16.855 12.575 15.876 13.174C14.569 13.974 13.429 15.021 12.475 16.219C11.733 17.15 11 18.26 11 19M19 12H6M6 10V14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></button>
-            <button onClick="{{ w.back2 }}" style="font-family: 'Iosevka', monospace; font-size: 13px; background: transparent; color: #7C6F57; border: 1px solid #D8C9A6; padding: 16px; border-radius: 8px; cursor: pointer; transition: color .15s ease, border-color .15s ease;" style-hover="color: #241D14; border-color: #241D14;">Назад</button>
-          </div>
-        </div>
-      </sc-if>
-
-      <!-- STEP 4 -->
-      <sc-if value="{{ w.isStep4 }}" hint-placeholder-val="{{ false }}">
-        <div style="position: relative;">
-          <h3 style="font-family: 'Anticva', serif; font-weight: 400; letter-spacing: -1px; text-transform: uppercase; font-size: clamp(22px, 3vw, 28px); padding-right: 96px;">Заказ №{{ w.orderNo }} принят</h3>
-          <div class="{{ w.doneBadgeClass }} done-badge" style="position: absolute; top: 24px; right: 24px; display: inline-flex; align-items: center; gap: 4px; font-family: 'Iosevka', monospace; font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #A5372B; border: 1px solid #A5372B; border-radius: 4px; padding: 8px 16px; opacity: 0.9; transform: rotate(-6deg); margin-top: 8px; margin-left: 8px; margin-right: 0px; white-space: nowrap"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color: #A5372B; flex-shrink: 0;"><path d="M 12.00 3.00 A 2.52 2.52 0 0 1 16.50 4.21 A 2.52 2.52 0 0 1 19.79 7.50 A 2.52 2.52 0 0 1 21.00 12.00 A 2.52 2.52 0 0 1 19.79 16.50 A 2.52 2.52 0 0 1 16.50 19.79 A 2.52 2.52 0 0 1 12.00 21.00 A 2.52 2.52 0 0 1 7.50 19.79 A 2.52 2.52 0 0 1 4.21 16.50 A 2.52 2.52 0 0 1 3.00 12.00 A 2.52 2.52 0 0 1 4.21 7.50 A 2.52 2.52 0 0 1 7.50 4.21 A 2.52 2.52 0 0 1 12.00 3.00 Z"></path><circle cx="12" cy="12" r="5"></circle><path d="M12 9.2 L12.6 11.4 L14.8 12 L12.6 12.6 L12 14.8 L11.4 12.6 L9.2 12 L11.4 11.4 Z"></path></svg>Готово. Претензий не имеется.</div>
-          <div style="margin-top: 24px; display: flex; flex-direction: column; gap: 8px;">
-            <sc-for list="{{ w.tracker }}" as="t" hint-placeholder-count="4">
-              <div style="display: flex; align-items: center; gap: 16px; padding: 8px 0;">
-                <span style="{{ t.dotStyle }}"></span>
-                <span style="{{ t.labelStyle }}">{{ t.label }}</span>
-              </div>
-            </sc-for>
-          </div>
-          <div style="margin-top: 24px;">
-            <button onClick="{{ w.reset }}" style="width: 100%; font-family: 'Iosevka', sans-serif; font-weight: 600; font-size: 15px; background: transparent; color: #241D14; border: 1px solid #D8C9A6; padding: 16px; border-radius: 8px; cursor: pointer; transition: border-color .15s ease;" style-hover="border-color: #241D14;">Оформить ещё одно</button>
-          </div>
-        </div>
-      </sc-if>
-      </div><div style="height: 10px; background-image: radial-gradient(circle, #B8A47C 1.6px, transparent 2px); background-size: 14px 10px; background-position: center; background-repeat: repeat-x; margin-top: 0px; margin-bottom: 16px; margin-left: 16px; margin-right: 16px; opacity: 0.5"></div>
-    </div>
-  </div>
-  </div>
-</section>
-
-<!-- PRICING BLOCK -->
-<section id="pricing" style="scroll-margin-top: 20px; background: #000000; color: #F2F0E9; font-family: 'Iosevka', system-ui, sans-serif; padding: 80px 24px; position: relative; overflow: hidden;">
-  <div style="position: absolute; inset: 0; background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22180%22%20height%3D%22180%22%3E%3Cfilter%20id%3D%22n%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.9%22%20numOctaves%3D%222%22%2F%3E%3CfeColorMatrix%20values%3D%220%200%200%200%201%200%200%200%200%201%200%200%200%200%201%200%200%200%200.5%200%22%2F%3E%3C%2Ffilter%3E%3Crect%20width%3D%22180%22%20height%3D%22180%22%20filter%3D%22url(%23n)%22%2F%3E%3C%2Fsvg%3E'); background-repeat: repeat; background-size: 180px 180px; mix-blend-mode: multiply; opacity: 0.1; pointer-events: none; z-index: 0;"></div>
-  <div style="max-width: 1280px; margin: 0 auto; padding: 0 8px; position: relative; z-index: 1;">
-    <div data-reveal="" style="text-align: center;">
-      <h2 class="grad-heading" style="font-family: 'Anticva', serif; font-weight: 400; letter-spacing: -1px; text-transform: uppercase; font-size: clamp(30px, 4.2vw, 56px); line-height: 1.05">Классы обслуживания</h2>
-      <p style="font-family: 'Iosevka', monospace; color: #8A8A86; font-size: clamp(13px, 1.4vw, 15px); margin-top: 16px;">Выберите скорость доставки</p>
-    </div>
-
-    <div class="plan-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; align-items: stretch; margin-top: 48px;">
-
-      <!-- CLASS I -->
-      <div data-reveal="" style="display: flex; flex-direction: column; transition-delay: 0ms;">
-        <div class="plan" style="position: relative; display: flex; flex-direction: column; flex: 1; background: #161514; border: none; border-radius: 12px; padding: 28px 28px 28px 36px; overflow: hidden; padding-top: 32px; padding-right: 32px; padding-bottom: 32px; padding-left: 32px">
-          <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 16px; background-image: radial-gradient(circle at left center, #000000 4px, transparent 4.5px); background-size: 16px 20px; background-position: -6px center; background-repeat: repeat-y;"></div>
-          <div style="font-family: 'Iosevka', monospace; font-size: 11px; font-weight: 600; letter-spacing: 0.18em; color: #8A8A86;">КЛАСС I</div>
-          <h3 style="font-family: 'Anticva', serif; font-weight: 400; letter-spacing: -1px; text-transform: uppercase; font-size: 24px; margin-top: 8px;">Эконом</h3>
-          <div style="font-family: 'Iosevka', monospace; font-size: 40px; font-weight: 600; letter-spacing: -0.02em; margin-top: 16px;">3 монеты</div>
-          <p style="font-family: 'Iosevka', monospace; font-size: 12.5px; color: #8A8A86; margin-top: 8px;"><span style="display: inline-flex; align-items: center; gap: 6px;"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" style="color: #8A8A86; flex-shrink: 0;"><path d="M2.75 1H13.25C13.4489 1 13.6397 1.07902 13.7803 1.21967C13.921 1.36032 14 1.55109 14 1.75C14 1.94891 13.921 2.13968 13.7803 2.28033C13.6397 2.42098 13.4489 2.5 13.25 2.5H12.5V3.75C12.5 4.48741 12.3283 5.2147 11.9985 5.87426C11.6687 6.53383 11.1899 7.10755 10.6 7.55L10.267 7.8C10.236 7.82329 10.2107 7.85348 10.1934 7.8882C10.176 7.92291 10.167 7.96119 10.167 8C10.167 8.03881 10.176 8.07709 10.1934 8.1118C10.2107 8.14652 10.236 8.17671 10.267 8.2L10.6 8.45C11.1899 8.89245 11.6687 9.46617 11.9985 10.1257C12.3283 10.7853 12.5 11.5126 12.5 12.25V13.5H13.25C13.4489 13.5 13.6397 13.579 13.7803 13.7197C13.921 13.8603 14 14.0511 14 14.25C14 14.4489 13.921 14.6397 13.7803 14.7803C13.6397 14.921 13.4489 15 13.25 15H2.75C2.55109 15 2.36032 14.921 2.21967 14.7803C2.07902 14.6397 2 14.4489 2 14.25C2 14.0511 2.07902 13.8603 2.21967 13.7197C2.36032 13.579 2.55109 13.5 2.75 13.5H3.5V12.25C3.5 11.5126 3.67169 10.7853 4.00147 10.1257C4.33125 9.46617 4.81007 8.89245 5.4 8.45L5.733 8.2C5.76405 8.17671 5.78925 8.14652 5.80661 8.1118C5.82396 8.07709 5.833 8.03881 5.833 8C5.833 7.96119 5.82396 7.92291 5.80661 7.8882C5.78925 7.85348 5.76405 7.82329 5.733 7.8L5.4 7.55C4.81007 7.10755 4.33125 6.53383 4.00147 5.87426C3.67169 5.2147 3.5 4.48741 3.5 3.75V2.5H2.75C2.55109 2.5 2.36032 2.42098 2.21967 2.28033C2.07902 2.13968 2 1.94891 2 1.75C2 1.55109 2.07902 1.36032 2.21967 1.21967C2.36032 1.07902 2.55109 1 2.75 1ZM11 2.5H5V3.75C5 4.773 5.482 5.736 6.3 6.35L6.633 6.6C7.567 7.3 7.567 8.7 6.633 9.4L6.3 9.65C5.89636 9.95273 5.56875 10.3453 5.34311 10.7966C5.11747 11.2478 5 11.7455 5 12.25V13.5H11V12.25C11 11.7455 10.8825 11.2478 10.6569 10.7966C10.4312 10.3453 10.1036 9.95273 9.7 9.65L9.367 9.4C9.1493 9.23724 8.97255 9.02595 8.8508 8.78292C8.72905 8.53989 8.66566 8.27182 8.66566 8C8.66566 7.72818 8.72905 7.46011 8.8508 7.21708C8.97255 6.97405 9.1493 6.76276 9.367 6.6L9.7 6.35C10.1036 6.04727 10.4312 5.65473 10.6569 5.20342C10.8825 4.75211 11 4.25446 11 3.75V2.5Z" fill="currentColor"></path></svg>к утру следующего дня</span></p>
-          <div class="plan-perf" style="height: 14px; margin: 20px 0; background-image: radial-gradient(circle, rgba(242,240,233,0.18) 1.6px, transparent 2px); background-size: 18px 14px; background-position: left center; background-repeat: repeat-x;"></div>
-          <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px;">
-            <li style="display: flex; align-items: center; gap: 8px; font-family: 'Iosevka', monospace; font-size: 13px; color: #8A8A86;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="flex-shrink: 0;"><path d="M5 14L9 17L18 6" stroke="#3BA55D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>стандартная сова</li>
-            <li style="display: flex; align-items: center; gap: 8px; font-family: 'Iosevka', monospace; font-size: 13px; color: #8A8A86;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="flex-shrink: 0;"><path d="M5 14L9 17L18 6" stroke="#3BA55D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>базовая гарантия</li>
-          </ul>
-          <a href="#quiz" style="margin-top: auto; padding-top: 24px;"><span class="plan-btn" style="display: block; text-align: center; font-family: 'Iosevka', sans-serif; font-weight: 600; font-size: 15px; background: transparent; color: #F2F0E9; border: 1px solid rgba(242,240,233,0.3); padding: 16px; border-radius: 8px; cursor: pointer; transition: background .15s ease, color .15s ease, border-color .15s ease;">Выбрать</span></a>
-        </div>
-      </div>
-
-      <!-- CLASS II — featured -->
-      <div data-reveal="" style="display: flex; flex-direction: column; transition-delay: 70ms;">
-        <div class="plan plan-feat" style="position: relative; display: flex; flex-direction: column; flex: 1; background: #161514; border: none; border-radius: 12px; padding: 28px 28px 28px 36px; overflow: hidden; padding-top: 32px; padding-right: 32px; padding-bottom: 32px; padding-left: 32px">
-          <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 16px; background-image: radial-gradient(circle at left center, #000000 4px, transparent 4.5px); background-size: 16px 20px; background-position: -6px center; background-repeat: repeat-y;"></div>
-          <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px;">
-            <div style="font-family: 'Iosevka', monospace; font-size: 11px; font-weight: 600; letter-spacing: 0.18em; color: #F2F0E9;">КЛАСС II</div>
-            <span style="display: inline-flex; align-items: center; font-family: 'Iosevka', monospace; font-size: 10px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #A5372B; background: transparent; border: 1px solid #A5372B; border-radius: 4px; padding: 8px 8px; opacity: 0.85; transform: rotate(-6deg); white-space: nowrap;">Востребовано</span>
-          </div>
-          <h3 style="font-family: 'Anticva', serif; font-weight: 400; letter-spacing: -1px; text-transform: uppercase; font-size: 24px; margin-top: 8px;">Экспресс</h3>
-          <div style="font-family: 'Iosevka', monospace; font-size: 40px; font-weight: 600; letter-spacing: -0.02em; margin-top: 16px;">7 монет</div>
-          <p style="font-family: 'Iosevka', monospace; font-size: 12.5px; color: #8A8A86; margin-top: 8px;"><span style="display: inline-flex; align-items: center; gap: 6px;"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" style="color: #8A8A86; flex-shrink: 0;"><path d="M2.75 1H13.25C13.4489 1 13.6397 1.07902 13.7803 1.21967C13.921 1.36032 14 1.55109 14 1.75C14 1.94891 13.921 2.13968 13.7803 2.28033C13.6397 2.42098 13.4489 2.5 13.25 2.5H12.5V3.75C12.5 4.48741 12.3283 5.2147 11.9985 5.87426C11.6687 6.53383 11.1899 7.10755 10.6 7.55L10.267 7.8C10.236 7.82329 10.2107 7.85348 10.1934 7.8882C10.176 7.92291 10.167 7.96119 10.167 8C10.167 8.03881 10.176 8.07709 10.1934 8.1118C10.2107 8.14652 10.236 8.17671 10.267 8.2L10.6 8.45C11.1899 8.89245 11.6687 9.46617 11.9985 10.1257C12.3283 10.7853 12.5 11.5126 12.5 12.25V13.5H13.25C13.4489 13.5 13.6397 13.579 13.7803 13.7197C13.921 13.8603 14 14.0511 14 14.25C14 14.4489 13.921 14.6397 13.7803 14.7803C13.6397 14.921 13.4489 15 13.25 15H2.75C2.55109 15 2.36032 14.921 2.21967 14.7803C2.07902 14.6397 2 14.4489 2 14.25C2 14.0511 2.07902 13.8603 2.21967 13.7197C2.36032 13.579 2.55109 13.5 2.75 13.5H3.5V12.25C3.5 11.5126 3.67169 10.7853 4.00147 10.1257C4.33125 9.46617 4.81007 8.89245 5.4 8.45L5.733 8.2C5.76405 8.17671 5.78925 8.14652 5.80661 8.1118C5.82396 8.07709 5.833 8.03881 5.833 8C5.833 7.96119 5.82396 7.92291 5.80661 7.8882C5.78925 7.85348 5.76405 7.82329 5.733 7.8L5.4 7.55C4.81007 7.10755 4.33125 6.53383 4.00147 5.87426C3.67169 5.2147 3.5 4.48741 3.5 3.75V2.5H2.75C2.55109 2.5 2.36032 2.42098 2.21967 2.28033C2.07902 2.13968 2 1.94891 2 1.75C2 1.55109 2.07902 1.36032 2.21967 1.21967C2.36032 1.07902 2.55109 1 2.75 1ZM11 2.5H5V3.75C5 4.773 5.482 5.736 6.3 6.35L6.633 6.6C7.567 7.3 7.567 8.7 6.633 9.4L6.3 9.65C5.89636 9.95273 5.56875 10.3453 5.34311 10.7966C5.11747 11.2478 5 11.7455 5 12.25V13.5H11V12.25C11 11.7455 10.8825 11.2478 10.6569 10.7966C10.4312 10.3453 10.1036 9.95273 9.7 9.65L9.367 9.4C9.1493 9.23724 8.97255 9.02595 8.8508 8.78292C8.72905 8.53989 8.66566 8.27182 8.66566 8C8.66566 7.72818 8.72905 7.46011 8.8508 7.21708C8.97255 6.97405 9.1493 6.76276 9.367 6.6L9.7 6.35C10.1036 6.04727 10.4312 5.65473 10.6569 5.20342C10.8825 4.75211 11 4.25446 11 3.75V2.5Z" fill="currentColor"></path></svg>40 минут</span></p>
-          <div class="plan-perf" style="height: 14px; margin: 20px 0; background-image: radial-gradient(circle, rgba(242,240,233,0.18) 1.6px, transparent 2px); background-size: 18px 14px; background-position: left center; background-repeat: repeat-x;"></div>
-          <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px;">
-            <li style="display: flex; align-items: center; gap: 8px; font-family: 'Iosevka', monospace; font-size: 13px; color: #F2F0E9;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="flex-shrink: 0;"><path d="M5 14L9 17L18 6" stroke="#3BA55D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>скоростная сова</li>
-            <li style="display: flex; align-items: center; gap: 8px; font-family: 'Iosevka', monospace; font-size: 13px; color: #F2F0E9;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="flex-shrink: 0;"><path d="M5 14L9 17L18 6" stroke="#3BA55D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>приоритетная обработка</li>
-            <li style="display: flex; align-items: center; gap: 8px; font-family: 'Iosevka', monospace; font-size: 13px; color: #F2F0E9;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="flex-shrink: 0;"><path d="M5 14L9 17L18 6" stroke="#3BA55D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>гарантия возврата чар</li>
-          </ul>
-          <a href="#quiz" style="margin-top: auto; padding-top: 24px;"><span class="plan-btn plan-btn-filled fill-btn" style="display: block; text-align: center; font-family: 'Iosevka', sans-serif; font-weight: 600; font-size: 15px; background: #F2F0E9; color: #000000; border: 1px solid #F2F0E9; padding: 16px; border-radius: 8px; cursor: pointer; transition: background .15s ease, color .15s ease, border-color .15s ease;">Выбрать</span></a>
-        </div>
-      </div>
-
-      <!-- CLASS III -->
-      <div data-reveal="" style="display: flex; flex-direction: column; transition-delay: 140ms;">
-        <div class="plan" style="position: relative; display: flex; flex-direction: column; flex: 1; background: #161514; border: none; border-radius: 12px; padding: 28px 28px 28px 36px; overflow: hidden; padding-top: 32px; padding-right: 32px; padding-bottom: 32px; padding-left: 32px">
-          <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 16px; background-image: radial-gradient(circle at left center, #000000 4px, transparent 4.5px); background-size: 16px 20px; background-position: -6px center; background-repeat: repeat-y;"></div>
-          <div style="font-family: 'Iosevka', monospace; font-size: 11px; font-weight: 600; letter-spacing: 0.18em; color: #8A8A86;">КЛАСС III</div>
-          <h3 style="font-family: 'Anticva', serif; font-weight: 400; letter-spacing: -1px; text-transform: uppercase; font-size: 24px; margin-top: 8px;">Портал</h3>
-          <div style="font-family: 'Iosevka', monospace; font-size: 40px; font-weight: 600; letter-spacing: -0.02em; margin-top: 16px;">15 монет</div>
-          <p style="font-family: 'Iosevka', monospace; font-size: 12.5px; color: #8A8A86; margin-top: 8px;"><span style="display: inline-flex; align-items: center; gap: 6px;"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" style="color: #8A8A86; flex-shrink: 0;"><path d="M2.75 1H13.25C13.4489 1 13.6397 1.07902 13.7803 1.21967C13.921 1.36032 14 1.55109 14 1.75C14 1.94891 13.921 2.13968 13.7803 2.28033C13.6397 2.42098 13.4489 2.5 13.25 2.5H12.5V3.75C12.5 4.48741 12.3283 5.2147 11.9985 5.87426C11.6687 6.53383 11.1899 7.10755 10.6 7.55L10.267 7.8C10.236 7.82329 10.2107 7.85348 10.1934 7.8882C10.176 7.92291 10.167 7.96119 10.167 8C10.167 8.03881 10.176 8.07709 10.1934 8.1118C10.2107 8.14652 10.236 8.17671 10.267 8.2L10.6 8.45C11.1899 8.89245 11.6687 9.46617 11.9985 10.1257C12.3283 10.7853 12.5 11.5126 12.5 12.25V13.5H13.25C13.4489 13.5 13.6397 13.579 13.7803 13.7197C13.921 13.8603 14 14.0511 14 14.25C14 14.4489 13.921 14.6397 13.7803 14.7803C13.6397 14.921 13.4489 15 13.25 15H2.75C2.55109 15 2.36032 14.921 2.21967 14.7803C2.07902 14.6397 2 14.4489 2 14.25C2 14.0511 2.07902 13.8603 2.21967 13.7197C2.36032 13.579 2.55109 13.5 2.75 13.5H3.5V12.25C3.5 11.5126 3.67169 10.7853 4.00147 10.1257C4.33125 9.46617 4.81007 8.89245 5.4 8.45L5.733 8.2C5.76405 8.17671 5.78925 8.14652 5.80661 8.1118C5.82396 8.07709 5.833 8.03881 5.833 8C5.833 7.96119 5.82396 7.92291 5.80661 7.8882C5.78925 7.85348 5.76405 7.82329 5.733 7.8L5.4 7.55C4.81007 7.10755 4.33125 6.53383 4.00147 5.87426C3.67169 5.2147 3.5 4.48741 3.5 3.75V2.5H2.75C2.55109 2.5 2.36032 2.42098 2.21967 2.28033C2.07902 2.13968 2 1.94891 2 1.75C2 1.55109 2.07902 1.36032 2.21967 1.21967C2.36032 1.07902 2.55109 1 2.75 1ZM11 2.5H5V3.75C5 4.773 5.482 5.736 6.3 6.35L6.633 6.6C7.567 7.3 7.567 8.7 6.633 9.4L6.3 9.65C5.89636 9.95273 5.56875 10.3453 5.34311 10.7966C5.11747 11.2478 5 11.7455 5 12.25V13.5H11V12.25C11 11.7455 10.8825 11.2478 10.6569 10.7966C10.4312 10.3453 10.1036 9.95273 9.7 9.65L9.367 9.4C9.1493 9.23724 8.97255 9.02595 8.8508 8.78292C8.72905 8.53989 8.66566 8.27182 8.66566 8C8.66566 7.72818 8.72905 7.46011 8.8508 7.21708C8.97255 6.97405 9.1493 6.76276 9.367 6.6L9.7 6.35C10.1036 6.04727 10.4312 5.65473 10.6569 5.20342C10.8825 4.75211 11 4.25446 11 3.75V2.5Z" fill="currentColor"></path></svg>мгновенно</span></p>
-          <div class="plan-perf" style="height: 14px; margin: 20px 0; background-image: radial-gradient(circle, rgba(242,240,233,0.18) 1.6px, transparent 2px); background-size: 18px 14px; background-position: left center; background-repeat: repeat-x;"></div>
-          <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px;">
-            <li style="display: flex; align-items: center; gap: 8px; font-family: 'Iosevka', monospace; font-size: 13px; color: #8A8A86;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="flex-shrink: 0;"><path d="M5 14L9 17L18 6" stroke="#3BA55D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>телепорт-доставка</li>
-            <li style="display: flex; align-items: center; gap: 8px; font-family: 'Iosevka', monospace; font-size: 13px; color: #8A8A86;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="flex-shrink: 0;"><path d="M5 14L9 17L18 6" stroke="#3BA55D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>круглосуточно</li>
-            <li style="display: flex; align-items: center; gap: 8px; font-family: 'Iosevka', monospace; font-size: 13px; color: #8A8A86;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="flex-shrink: 0;"><path d="M5 14L9 17L18 6" stroke="#3BA55D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>страховка эффекта</li>
-          </ul>
-          <a href="#quiz" style="margin-top: auto; padding-top: 24px;"><span class="plan-btn" style="display: block; text-align: center; font-family: 'Iosevka', sans-serif; font-weight: 600; font-size: 15px; background: transparent; color: #F2F0E9; border: 1px solid rgba(242,240,233,0.3); padding: 16px; border-radius: 8px; cursor: pointer; transition: background .15s ease, color .15s ease, border-color .15s ease;">Выбрать</span></a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<div style="height: 14px; background-image: radial-gradient(circle, rgba(242,240,233,0.18) 1.6px, transparent 3px); background-size: 18px 14px; background-position: center; background-repeat: repeat-x; position: relative; z-index: 1; margin: 32px auto; width: 1280px; max-width: 100%"></div>
-
-<!-- FINAL CTA -->
-<section class="cta-section" style="background: #000000; color: #F2F0E9; font-family: 'Iosevka', system-ui, sans-serif; padding: 80px 24px; text-align: center; position: relative; overflow: hidden;">
-  <div style="position: absolute; inset: 0; background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22180%22%20height%3D%22180%22%3E%3Cfilter%20id%3D%22n%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.9%22%20numOctaves%3D%222%22%2F%3E%3CfeColorMatrix%20values%3D%220%200%200%200%201%200%200%200%200%201%200%200%200%200%201%200%200%200%200.5%200%22%2F%3E%3C%2Ffilter%3E%3Crect%20width%3D%22180%22%20height%3D%22180%22%20filter%3D%22url(%23n)%22%2F%3E%3C%2Fsvg%3E'); background-repeat: repeat; background-size: 180px 180px; mix-blend-mode: soft-light; opacity: 0.5; pointer-events: none; z-index: 0;"></div>
-  <h2 data-reveal="" class="grad-heading" style="font-family: 'Anticva', serif; font-weight: 400; letter-spacing: -1px; text-transform: uppercase; font-size: clamp(28px, 4vw, 56px); line-height: 1; max-width: 18ch; margin: 0 auto; position: relative; z-index: 1">Что бы вы хотели исправить сегодня?</h2>
-  <div style="margin-top: 48px; position: relative; z-index: 1;">
-    <a href="#quiz" class="cta-btn fill-btn" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-family: 'Iosevka', sans-serif; font-weight: 600; font-size: 15px; background: #F2F0E9; color: #000000; border: none; padding: 16px 24px; border-radius: 8px; text-decoration: none; transition: transform .08s ease, color .15s ease;" style-active="transform: scale(0.97);">Подобрать заклинание<svg width="26" height="26" viewBox="0 0 24 24" fill="none" style="flex-shrink: 0;"><path d="M11 5C11 5.742 11.733 6.85 12.475 7.78C13.429 8.98 14.569 10.027 15.876 10.826C16.856 11.425 18.044 12 19 12M19 12C18.044 12 16.855 12.575 15.876 13.174C14.569 13.974 13.429 15.021 12.475 16.219C11.733 17.15 11 18.26 11 19M19 12H6M6 10V14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
-  </div>
-  <img src="./images/dragon-cta.gif" alt="Дракон" style="width: 100%; max-width: 700px; height: auto; display: block; margin: 0 auto; position: relative; z-index: 1;">
-</section>
-
-<!-- WORKLOG BLOCK -->
-<section class="worklog-section" style="background: #000000; padding: 80px 24px;">
-  <div data-reveal="" class="spark-light" style="max-width: 1280px; margin: 0 auto; background: #FFECD3; border-radius: 12px; overflow: hidden; color: #241D14; font-family: 'Iosevka', system-ui, sans-serif; position: relative;">
-    <div style="position: absolute; inset: 0; background-image: url('./images/paper-texture.jpg'); background-size: cover; background-position: center; mix-blend-mode: multiply; opacity: 0.5; pointer-events: none; z-index: 0;"></div>
-    <div style="position: absolute; inset: 0; background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22180%22%20height%3D%22180%22%3E%3Cfilter%20id%3D%22n%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.9%22%20numOctaves%3D%222%22%2F%3E%3CfeColorMatrix%20values%3D%220%200%200%200%201%200%200%200%200%201%200%200%200%200%201%200%200%200%200.5%200%22%2F%3E%3C%2Ffilter%3E%3Crect%20width%3D%22180%22%20height%3D%22180%22%20filter%3D%22url(%23n)%22%2F%3E%3C%2Fsvg%3E'); background-repeat: repeat; background-size: 180px 180px; mix-blend-mode: multiply; opacity: 0.1; pointer-events: none; z-index: 0;"></div>
-    <!-- perforation -->
-    
-
-    <div style="padding: clamp(28px, 5vw, 52px); position: relative; z-index: 1;">
-      <!-- header -->
-      <div style="display: flex; align-items: center; gap: 16px;">
-        
-        <div style="width: 100%">
-          <h2 style="font-family: 'Anticva', serif; font-weight: 400; letter-spacing: -1px; text-transform: uppercase; font-size: clamp(24px, 3.4vw, 38px); line-height: 1.1; text-align: center">AI WORKLOG</h2>
-          
-        </div>
-      </div>
-
-      <!-- checkpoints (collapsible) -->
-      <div style="margin-top: 32px; padding-top: 24px;">
-        <div style="height: 10px; margin: -24px 0 24px; background-image: radial-gradient(circle, #B8A47C 1.6px, transparent 2px); background-size: 14px 10px; background-position: center; background-repeat: repeat-x;"></div>
-        <button onClick="{{ itemsLog.toggle }}" style="display: flex; align-items: center; justify-content: space-between; width: 100%; background: transparent; border: none; cursor: pointer; padding: 0; text-align: left; font-family: 'Iosevka', sans-serif; color: #241D14;">
-          <span style="font-weight: 700; font-size: 16px;">Как собран этот сервис: чеклист</span>
-          <span style="font-family: 'Iosevka', monospace; font-size: 22px; color: #A5372B; line-height: 1; width: 24px; text-align: center;">{{ itemsLog.arrow }}</span>
-        </button>
-        <div class="{{ itemsLog.panelClass }}">
-          <div style="border: 1px solid #E0D3B4; border-radius: 12px; padding: 20px; background: #FBF7EC;">
-            <sc-for list="{{ logItems }}" as="it" hint-placeholder-count="9">
-              <div style="{{ it.rowStyle }}">
-                <span style="font-family: 'Iosevka', monospace; font-size: 20px; font-weight: 600; color: #A5372B; flex-shrink: 0; width: 40px;">{{ it.num }}</span>
-                <p style="font-size: 15px; line-height: 1.6; color: #241D14; text-wrap: pretty;"><strong style="font-weight: 700; font-size: 16px">{{ it.title }}</strong>{{ it.body }}</p>
-              </div>
-            </sc-for>
-          </div>
-        </div>
-      </div>
-
-      <!-- appendix B (collapsible) -->
-      <div style="margin-top: 24px; padding-top: 24px;">
-        <div style="height: 10px; margin: -24px 0 24px; background-image: radial-gradient(circle, #B8A47C 1.6px, transparent 2px); background-size: 14px 10px; background-position: center; background-repeat: repeat-x;"></div>
-        <button onClick="{{ log.toggle }}" style="display: flex; align-items: center; justify-content: space-between; width: 100%; background: transparent; border: none; cursor: pointer; padding: 0; text-align: left; font-family: 'Iosevka', sans-serif; color: #241D14;">
-          <span style="font-weight: 700; font-size: 16px;">Приложение Б: точные промты</span>
-          <span style="font-family: 'Iosevka', monospace; font-size: 22px; color: #A5372B; line-height: 1; width: 24px; text-align: center;">{{ log.arrow }}</span>
-        </button>
-        <div class="{{ log.panelClass }}">
-          <div style="border: 1px solid #E0D3B4; border-radius: 12px; padding: 20px; background: #FBF7EC; display: flex; flex-direction: column; gap: 16px;">
-            <sc-for list="{{ prompts }}" as="p" hint-placeholder-count="3">
-              <div>
-                <div style="font-family: 'Iosevka', monospace; font-size: 10.5px; letter-spacing: 0.06em; color: #A5372B; text-transform: uppercase; margin-bottom: 5px;">{{ p.tag }}</div>
-                <div style="font-family: 'Iosevka', monospace; font-size: 12px; line-height: 1.55; color: #7C6F57; white-space: pre-line;">{{ p.text }}</div>
-              </div>
-            </sc-for>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer style="background: #000000; color: #8A8A86; font-family: 'Iosevka', system-ui, sans-serif; border-top: 1px solid #1A1A1D; padding: 40px 24px 56px;">
-  <div style="max-width: 1280px; margin: 0 auto; padding: 0 8px; display: flex; flex-direction: column; gap: 8px; align-items: center; text-align: center;">
-    <p style="display: inline-flex; align-items: center; gap: 8px; font-family: 'Iosevka', monospace; font-size: 13px; color: #F2F0E9;"><img src="./images/sdech-seal-icon.png" alt="" style="width: 16px; height: 16px; flex-shrink: 0; object-fit: contain;">Служба доставки заклинаний 2026</p>
-    <p style="font-family: 'Iosevka', monospace; font-size: 12px; color: #8A8A86;">Тестовое задание для MOX Creative Studio</p>
-    <p style="font-family: 'Iosevka', monospace; font-size: 11px; color: #8A8A86; opacity: 0.75; margin-top: 8px;">Все заклинания вымышлены. Драконы — тоже. Совпадения случайны.</p>
-  </div>
-</footer>
-
-</x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280,&quot;height&quot;:800}}">
-class Component extends DCLogic {
-  state = {
-    selected: 0, filter: "Всё", catIdx: 0,
-    wStep: 1, prob: null, wName: "", wAddr: "", urg: "express",
-    wErr: false, orderNo: null, trackerLit: 1,
-    promptsOpen: false, itemsOpen: false,
-  };
-
-  catTrackRef = React.createRef();
-
-  componentWillUnmount() {
-    this.clearTrackerTimers();
-    clearInterval(this._catAuto);
-    clearTimeout(this._catResumeT);
-    clearInterval(this._owlLoop);
-    if (this._revealObserver) this._revealObserver.disconnect();
-    if (this._onMove) window.removeEventListener('mousemove', this._onMove);
-  }
-
-  loopOwlGif() {
-    const owl = document.querySelector('.hero-owl');
-    if (!owl) return;
-    const base = owl.getAttribute('src').split('?')[0];
-    clearInterval(this._owlLoop);
-    this._owlLoop = setInterval(() => {
-      owl.src = base + '?r=' + Date.now();
-    }, 4000);
-  }
-
-  attachReveal() {
-    if (!this._revealObserver) {
-      this._revealObserver = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('is-visible');
-            this._revealObserver.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.15 });
-    }
-    document.querySelectorAll('[data-reveal]').forEach((el) => {
-      if (!el.dataset.observed) {
-        el.dataset.observed = '1';
-        this._revealObserver.observe(el);
-      }
-    });
-  }
-
-  componentDidUpdate() {
-    this.attachReveal();
-  }
-
-  scrollCatTo(i) {
-    const track = this.catTrackRef.current;
-    if (!track || !track.children[i]) return;
-    track.scrollTo({ left: track.children[i].offsetLeft, behavior: 'smooth' });
-    this.setState({ catIdx: i });
-  }
-
-  setupCatSlider() {
-    const track = this.catTrackRef.current;
-    if (!track) return;
-    const isMobile = () => window.matchMedia('(max-width: 760px)').matches;
-    const reduced = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const startAuto = () => {
-      clearInterval(this._catAuto);
-      if (!isMobile() || reduced()) return;
-      this._catAuto = setInterval(() => {
-        const cards = track.children;
-        if (!cards.length) return;
-        this.scrollCatTo((this.state.catIdx + 1) % cards.length);
-      }, 3500);
-    };
-    const pauseAuto = () => {
-      clearInterval(this._catAuto);
-      clearTimeout(this._catResumeT);
-      this._catResumeT = setTimeout(startAuto, 5000);
-    };
-    track.addEventListener('pointerdown', pauseAuto);
-    track.addEventListener('touchstart', pauseAuto, { passive: true });
-    track.addEventListener('mouseenter', pauseAuto);
-    track.addEventListener('scroll', () => {
-      const cards = track.children;
-      if (!cards.length) return;
-      let closest = 0, min = Infinity;
-      for (let i = 0; i < cards.length; i++) {
-        const d = Math.abs(cards[i].offsetLeft - track.scrollLeft);
-        if (d < min) { min = d; closest = i; }
-      }
-      if (closest !== this.state.catIdx) this.setState({ catIdx: closest });
-    });
-    this._catStart = startAuto;
-    startAuto();
-  }
-
-  resetCatSlider() {
-    this.setState({ catIdx: 0 });
-    const track = this.catTrackRef.current;
-    if (track) track.scrollTo({ left: 0, behavior: 'auto' });
-    if (this._catStart) this._catStart();
-  }
-
-  playHeroIntro() {
-    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const items = Array.from(document.querySelectorAll('.hero-intro'));
-    const owl = document.querySelector('.hero-owl');
-    if (reduced) {
-      items.forEach((el) => el.classList.add('is-in'));
-      if (owl) owl.classList.add('is-in');
-      return;
-    }
-    const base = 2650;
-    const delays = [base, base + 120, base + 220, base + 300];
-    requestAnimationFrame(() => {
-      items.forEach((el, i) => {
-        setTimeout(() => el.classList.add('is-in'), delays[i] != null ? delays[i] : base + 300);
-      });
-      if (owl) setTimeout(() => owl.classList.add('is-in'), base + 200);
-    });
-  }
-
-  componentDidMount() {
-    this.setupCatSlider();
-    this.attachReveal();
-    this.playHeroIntro();
-    this.loopOwlGif();
-    if (window.matchMedia('(pointer: coarse)').matches) return;
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    let lastSpark = 0;
-    const spawnSpark = (x, y) => {
-      const el = document.elementFromPoint(x, y);
-      const overLight = !!(el && el.closest('.spark-light'));
-      const s = document.createElement('div');
-      s.className = 'wand-spark';
-      const size = 1 + Math.random() * 1.5;
-      s.style.width = size + 'px';
-      s.style.height = size + 'px';
-      const ox = x + (Math.random() * 40 - 20);
-      const oy = y + (Math.random() * 40 - 20);
-      s.style.setProperty('--x', ox + 'px');
-      s.style.setProperty('--y', oy + 'px');
-      s.style.setProperty('--dx', (Math.random() * 120 - 60) + 'px');
-      s.style.setProperty('--dy', (Math.random() * 120 - 40) + 'px');
-      if (overLight) {
-        s.style.background = '#A5372B';
-        s.style.boxShadow = 'none';
-      } else {
-        s.style.background = '#F2F0E9';
-        s.style.boxShadow = '0 0 ' + (3 + Math.random() * 4) + 'px rgba(242,240,233,0.9)';
-      }
-      document.body.appendChild(s);
-      setTimeout(() => s.remove(), 720);
-    };
-    this._onMove = (e) => {
-      const now = Date.now();
-      if (now - lastSpark > 12) { for (let i = 0; i < 8; i++) spawnSpark(e.clientX, e.clientY); lastSpark = now; }
-    };
-    window.addEventListener('mousemove', this._onMove);
-  }
-
-  clearTrackerTimers() {
-    (this._trkTimers || []).forEach(clearTimeout);
-    this._trkTimers = [];
-  }
-
-  startTracker() {
-    this.clearTrackerTimers();
-    this.setState({ trackerLit: 1 });
-    this._trkTimers = [600, 1200, 1800].map((ms, idx) =>
-      setTimeout(() => this.setState({ trackerLit: idx + 2 }), ms)
-    );
-  }
-
-  wizardVals() {
-    const s = this.state;
-    const problems = [
-      { label: "Что-то потерялось", spell: { name: "Найти ключи", cat: "[ ДОМ ]", effect: "указывает точное место за 10 минут", delivery: "40 минут" } },
-      { label: "Кто-то мешает", spell: { name: "Успокоить дракона", cat: "[ СУЩЕСТВА ]", effect: "крепкий сон на 8 часов, без агрессии", delivery: "2 часа" } },
-      { label: "Нет вдохновения", spell: { name: "Вернуть вдохновение", cat: "[ НАСТРОЕНИЕ ]", effect: "поток идей на 3 дня, побочно — болтливость", delivery: "1 час" } },
-      { label: "Неловкая ситуация", spell: { name: "Отменить неловкую паузу", cat: "[ НАСТРОЕНИЕ ]", effect: "возвращает разговор в нужное русло", delivery: "мгновенно (портал)" } },
-    ];
-    const tabs = { 1: "ЗАЯВКА:  ШАГ 1/4", 2: "ПОДБОР ШАГ 2/4", 3: "ОФОРМЛЕНИЕ ШАГ 3/4", 4: "ЗАКАЗ ШАГ 4/4" };
-
-    const dots = [1, 2, 3, 4].map((n) => ({
-      style: [
-        "height: 4px", "flex: 1", "border-radius: 4px",
-        "background: " + (n <= s.wStep ? "#A5372B" : "#D8C9A6"),
-        "transition: background .25s ease",
-      ].join(";"),
-    }));
-
-    const probs = problems.map((p, i) => {
-      const active = s.prob === i;
-      return {
-        label: p.label,
-        select: () => this.setState({ prob: i }),
-        rowStyle: [
-          "display: flex", "align-items: center", "gap: 16px", "width: 100%",
-          "text-align: left", "cursor: pointer", "padding: 16px", "border-radius: 8px",
-          "background: " + (active ? "#EFE0C4" : "transparent"),
-          "border: 1px solid " + (active ? "#A5372B" : "#D8C9A6"),
-          "transition: background .15s ease, border-color .15s ease",
-        ].join(";"),
-        dotOuter: [
-          "flex-shrink: 0", "width: 18px", "height: 18px", "border-radius: 50%",
-          "border: 1.5px solid " + (active ? "#A5372B" : "#C9B896"),
-          "display: inline-flex", "align-items: center", "justify-content: center",
-        ].join(";"),
-        dotInner: ["width: 9px", "height: 9px", "border-radius: 50%", "background: #A5372B", "transform: scale(" + (active ? 1 : 0) + ")", "transition: transform .15s ease"].join(";"),
-      };
-    });
-
-    const canNext1 = s.prob !== null;
-    const next1Style = [
-      "width: 100%", "margin-top: 24px", "font-family: 'Iosevka', sans-serif", "font-weight: 600", "font-size: 15px",
-      "border: none", "padding: 16px", "border-radius: 8px",
-      "cursor: " + (canNext1 ? "pointer" : "not-allowed"),
-      "background: " + (canNext1 ? "#241D14" : "#D8C9A6"),
-      "color: " + (canNext1 ? "#F5EFE0" : "#9B8B6C"),
-      "transition: background .15s ease, color .15s ease",
-    ].join(";");
-
-    const rec = s.prob !== null ? problems[s.prob].spell : { name: "", cat: "", effect: "", delivery: "" };
-
-    const nameEmpty = s.wName.trim() === "";
-    const addrEmpty = s.wAddr.trim() === "";
-    const canSubmit = !nameEmpty && !addrEmpty;
-    const fieldBase = (err) => [
-      "width: 100%", "font-family: 'Iosevka', monospace", "font-size: 14px",
-      "background: #FBF7EC", "color: #241D14",
-      "border: 1px solid " + (err ? "#A5372B" : "#D8C9A6"),
-      "border-radius: 8px", "padding: 16px", "outline: none",
-    ].join(";");
-
-    const urgOpts = [
-      { key: "econom", roman: "I", label: "Эконом к утру" },
-      { key: "express", roman: "II", label: "Экспресс 40 мин" },
-      { key: "portal", roman: "III", label: "Портал мгновенно" },
-    ];
-    const urg = urgOpts.map((u) => {
-      const active = s.urg === u.key;
-      return {
-        label: u.label,
-        roman: u.roman,
-        select: () => this.setState({ urg: u.key }),
-        style: [
-          "flex: 1", "min-width: 130px", "font-family: 'Iosevka', monospace", "font-size: 12px",
-          "cursor: pointer", "padding: 16px 8px", "border-radius: 8px", "text-align: center",
-          "background: " + (active ? "#EFE0C4" : "transparent"),
-          "color: " + (active ? "#241D14" : "#7C6F57"),
-          "border: 1px solid " + (active ? "#A5372B" : "#D8C9A6"),
-          "transition: all .15s ease",
-        ].join(";"),
-      };
-    });
-
-    const submitStyle = [
-      "flex: 1", "min-width: 180px", "font-family: 'Iosevka', sans-serif", "font-weight: 600", "font-size: 15px",
-      "border: none", "padding: 16px", "border-radius: 8px", "cursor: pointer",
-      "background: " + (canSubmit ? "#241D14" : "#D8C9A6"),
-      "color: " + (canSubmit ? "#F5EFE0" : "#9B8B6C"),
-      "transition: background .15s ease, color .15s ease",
-    ].join(";");
-
-    const trackerDefs = ["Принято", "Колдуется", "В пути (сова)", "Доставлено"];
-    const tracker = trackerDefs.map((label, i) => {
-      const done = i < s.trackerLit;
-      const current = i === s.trackerLit;
-      return {
-        label,
-        dotStyle: [
-          "flex-shrink: 0", "width: 14px", "height: 14px", "border-radius: 50%",
-          "background: " + (done ? "#3BA55D" : "transparent"),
-          "border: 1.5px solid " + (done ? "#3BA55D" : (current ? "#A5372B" : "#C9B896")),
-          "transition: all .3s ease",
-        ].join(";"),
-        labelStyle: [
-          "font-family: 'Iosevka', monospace", "font-size: 14px",
-          "color: " + (done ? "#241D14" : (current ? "#241D14" : "#7C6F57")),
-          "transition: color .3s ease",
-        ].join(";"),
-      };
-    });
-
-    return {
-      w: {
-        tab: tabs[s.wStep],
-        isStep1: s.wStep === 1, isStep2: s.wStep === 2, isStep3: s.wStep === 3, isStep4: s.wStep === 4,
-        dots, probs, next1Style,
-        next1: () => { if (s.prob !== null) this.setState({ wStep: 2 }); },
-        rec,
-        back1: () => this.setState({ wStep: 1 }),
-        toStep3: () => this.setState({ wStep: 3, wErr: false }),
-        back2: () => this.setState({ wStep: 2 }),
-        name: s.wName, addr: s.wAddr,
-        onName: (e) => this.setState({ wName: e.target.value }),
-        onAddr: (e) => this.setState({ wAddr: e.target.value }),
-        nameFieldStyle: fieldBase(s.wErr && nameEmpty),
-        addrFieldStyle: fieldBase(s.wErr && addrEmpty),
-        nameErr: s.wErr && nameEmpty, addrErr: s.wErr && addrEmpty,
-        urg, submitStyle,
-        submit: () => {
-          if (canSubmit) {
-            this.setState({ wStep: 4, orderNo: 1000 + Math.floor(Math.random() * 9000), wErr: false });
-            this.startTracker();
-          } else {
-            this.setState({ wErr: true });
-          }
-        },
-        orderNo: s.orderNo, tracker,
-        doneBadgeClass: s.trackerLit >= 4 ? "stamp-4-play" : "",
-        reset: () => { this.clearTrackerTimers(); this.setState({ wStep: 1, prob: null, wName: "", wAddr: "", urg: "express", wErr: false, orderNo: null, trackerLit: 1 }); },
-      },
-    };
-  }
-
-
-  catalogVals() {
-    const cat = [
-      { disp: "[ ДОМ ]", cat: "Бытовое", name: "Найти ключи", when: "пропали утром перед выходом", effect: "указывает точное место за 10 минут", diff: 2, delivery: "40 минут", stamp: "в наличии", stampNew: false },
-      { disp: "[ СУЩЕСТВА ]", cat: "Существа", name: "Успокоить дракона", when: "рычит и не даёт спать соседям", effect: "крепкий сон на 8 часов, без агрессии", diff: 3, delivery: "2 часа", stamp: "в наличии", stampNew: false },
-      { disp: "[ ДОМ ]", cat: "Бытовое", name: "Вспомнить пароль", when: "вертится на языке, но не даётся", effect: "пароль возвращается за секунду, даже от аккаунта 2011 года", diff: 1, delivery: "15 минут", stamp: "в наличии", stampNew: false },
-      { disp: "[ НАСТРОЕНИЕ ]", cat: "Настроение", name: "Вернуть вдохновение", when: "смотришь на пустой лист третий час", effect: "поток идей на 3 дня, побочно — болтливость", diff: 2, delivery: "1 час", stamp: "в наличии", stampNew: false },
-      { disp: "[ НАСТРОЕНИЕ ]", cat: "Настроение", name: "Отменить неловкую паузу", when: "все замолчали на встрече", effect: "возвращает разговор в нужное русло", diff: 2, delivery: "мгновенно (портал)", stamp: "в наличии", stampNew: false },
-      { disp: "[ ДОМ ]", cat: "Бытовое", name: "Разбудить телефон", when: "0% в самый неподходящий момент", effect: "+30% заряда из ниоткуда, разово", diff: 1, delivery: "20 минут", stamp: "новинка", stampNew: true },
-    ];
-    const filterNames = ["Всё", "Бытовое", "Существа", "Настроение"];
-    const filters = filterNames.map((label) => {
-      const active = this.state.filter === label;
-      return {
-        label,
-        select: () => { this.setState({ filter: label }); setTimeout(() => this.resetCatSlider(), 0); },
-        cls: active ? "cat-filter cat-filter-active" : "cat-filter",
-        display: active ? "[ " + label + " ]" : label,
-        style: [
-          "font-family: 'Iosevka', monospace", "font-size: 12px", "cursor: pointer",
-          "padding: 8px 16px", "letter-spacing: 0.06em", "background: transparent", "border: none",
-          "color: " + (active ? "#F2F0E9" : "#8A8A86"),
-          "transition: color 0.15s ease",
-        ].join(";"),
-      };
-    });
-    const cards = cat
-      .filter((c) => this.state.filter === "Всё" || c.cat === this.state.filter)
-      .map((c, i) => ({
-        category: c.disp, tabOffset: "0px",
-        revealDelay: Math.min(i * 70, 420) + "ms",
-        name: c.name, when: c.when, effect: c.effect, delivery: c.delivery,
-        stamp: c.stampNew ? "СКОРО" : "В НАЛИЧИИ",
-        stampStyle: [
-          "position: absolute", "top: 18px", "right: 18px",
-          "display: inline-flex", "align-items: center", "gap: 5px",
-          "font-family: 'Iosevka', monospace", "font-size: 10px", "font-weight: 600",
-          "letter-spacing: 0.16em", "text-transform: uppercase",
-          "color: " + (c.stampNew ? "#8A8A86" : "#3BA55D"), "background: transparent",
-          "border: 1px solid " + (c.stampNew ? "#8A8A86" : "#3BA55D"), "border-radius: 4px",
-          "padding: 8px 8px", "z-index: 1", "opacity: 0.4",
-          "transform: rotate(-6deg)", "white-space: nowrap",
-        ].join(";"),
-      }));
-    const catDots = cards.map((_, i) => ({
-      style: [
-        "width: 7px", "height: 7px", "border-radius: 50%",
-        "background: " + (i === this.state.catIdx ? "#A5372B" : "#282724"),
-        "transition: background .2s ease",
-      ].join(";"),
-    }));
-    return { filters, cards, catDots, catTrackRef: this.catTrackRef };
-  }
-
-  renderVals() {
-    const open = this.state.promptsOpen;
-    const itemsOpen = this.state.itemsOpen;
-    const itemsLog = {
-      open: itemsOpen,
-      toggle: () => this.setState((s) => ({ itemsOpen: !s.itemsOpen })),
-      arrow: itemsOpen ? "\u2212" : "+",
-      panelClass: itemsOpen ? "prompts-panel open" : "prompts-panel",
-    };
-    const log = {
-      open,
-      toggle: () => this.setState((s) => ({ promptsOpen: !s.promptsOpen })),
-      arrow: open ? "−" : "+",
-      panelClass: open ? "prompts-panel open" : "prompts-panel",
-    };
-    const logDefs = [
-      { title: "Концепция", body: " — Claude (скилл creative-director): 3 концепции сервиса, сравнение по оригинальности/связности, выбрана «Бюрократия чудес» — архивно-канцелярская эстетика вместо буквальной сказочности." },
-      { title: "Визуальное направление", body: " — Claude (скилл canvas-design): собраны и сравнены style-tile борды 6 стилевых направлений, выбрана «Картотека» (тёмная база + сургучный акцент). Финальные шрифты: Anticva (заголовки), Iosevka (текст и метки)." },
-      { title: "Промты для визуалов", body: " — сгенерированы в ChatGPT (детальные текстовые промты под конкретные объекты — конверт, посылка, сургучная печать, сова-курьер — с описанием палитры, освещения, композиции)." },
-      { title: "Изображение и анимация совы-курьера", body: " — сгенерированы в Flora: статичное изображение через Nano Banana (dot-art силуэт совы с конвертом), анимация — через Seedance 2.0 (гифка полёта)." },
-      { title: "Тексты", body: " — карточки заклинаний, тарифы, микрокопирайт, расшифровка аббревиатуры СДЭЧ: черновики Claude, доработаны вручную под тон бюрократического юмора." },
-      { title: "Сборка", body: " — Claude Design (вёрстка HTML/CSS, интерактивная логика), публикация на GitHub Pages." },
-      { title: "Доработано руками", body: " — 4 состояния квиза с валидацией, hover-состояния карточек, автослайдер на мобильном, кастомный курсор-палочка, noise-текстура, градиент заголовков, reveal-анимации, единая система отступов и радиусов по кратности 8." },
-      { title: "Слабые места и правки", body: " — серая плёнка от noise поверх чёрного фона гифки (исправлено сменой blend-режима на soft-light), рассинхрон типографики между карточками каталога и формой квиза (синхронизировано), наложение текста на фоновую картинку совы в hero (сова возвращена в поток под кнопками вместо абсолютного фона)." },
-      { title: "Проверка", body: " — открыт без VPN на GitHub Pages, пройдены все 4 шага квиза с валидацией, проверена адаптивность 320–1600px, слайдер и анимации на мобильном, prefers-reduced-motion." },
-    ];
-    const logItems = logDefs.map((d, i) => ({
-      num: String(i + 1).padStart(2, "0"),
-      title: d.title, body: d.body,
-      rowStyle: [
-        "display: flex", "gap: 16px", "align-items: flex-start", "padding: 16px 0",
-        i > 0 ? "border-top: 1px solid #E0D3B4" : "border-top: none",
-      ].join(";"),
-    }));
-    const prompts = [
-      { tag: "creative-director", text: "Сгенерируй 3 концепции лендинга для вымышленного сервиса доставки заклинаний, оцени по оригинальности и связности, выбери сильнейшую." },
-      { tag: "визуальный стиль", text: "КОНЦЕПЦИЯ И СТИЛЬ\nВизуальный язык — «картотека / архив»: сервис оформлен как строгая каталожная система. Заклинания — это каталожные карточки с табами и шифрами. Эстетика: тёмный фон, тонкий контурный рисунок, моноширинные метки, ощущение системного архива. Спокойно, чисто, без визуального шума. Одна тёплая деталь-акцент — небольшая сургучная печать у логотипа.\nПалитра: фон (чернила) — #000000, карточка — #161514, белый (текст, контуры) — #F2F0E9, серый (вторичный текст) — #8A8A86, сигнальный акцент (ссылки, активное) — #A5372B, тёплый акцент (бумага/печать) — #FFECD3." },
-      { tag: "главный визуал", text: "Animate this owl in a 3-second seamless loop. The owl is flying in place, moving naturally as if in active flight. Its wings flap smoothly and return exactly to the same starting position by the end of the animation, so the loop is perfectly seamless. Add subtle body bobbing synchronized with the wing movement. The matte black folder stays firmly held in the beak and does not swing or deform. Keep the owl flying to the right. Preserve the minimal white halftone-dot style and the perfectly flat solid background #0B0B0D. No flicker, no morphing, no extra motion, no background changes." },
-    ];
-    return { log, itemsLog, logItems, prompts, ...this.catalogVals(), ...this.wizardVals() };
-  }
-}
-</script>
-</body>
-</html>
