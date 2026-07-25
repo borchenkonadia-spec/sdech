@@ -36,3 +36,4 @@ React и ReactDOM 18.3.1 подгружаются с публичного CDN un
 
 - **Anticva** — заголовки
 - **Iosevka Extended** (regular / semibold) — наборный текст, метки, кнопки
+  
