@@ -45,6 +45,166 @@
     font-synthesis: none;
   }
 </style>
+
+<style id="mobile-layout-fixes">
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  @media (max-width: 640px) {
+    #top {
+      overflow: hidden;
+    }
+
+    .hero-shell {
+      padding-left: 16px !important;
+      padding-right: 16px !important;
+    }
+
+    .hero-title {
+      width: 100% !important;
+      max-width: 100% !important;
+      font-size: clamp(26px, 8vw, 34px) !important;
+      line-height: 1 !important;
+      letter-spacing: -0.6px !important;
+    }
+
+    .hero-title > span {
+      display: block !important;
+      max-width: 100% !important;
+      white-space: nowrap !important;
+    }
+
+    .hero-title > span:first-child {
+      line-height: 1.18 !important;
+    }
+
+    .hero-title > span:last-child {
+      line-height: 0.96 !important;
+    }
+
+    #catalog {
+      padding-left: 16px !important;
+      padding-right: 16px !important;
+      overflow: hidden !important;
+    }
+
+    #catalog .cat-grid {
+      width: 100% !important;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      padding: 0 0 6px !important;
+      scroll-padding-inline: 0 !important;
+    }
+
+    #catalog .cat-grid > .folder {
+      flex: 0 0 100% !important;
+      width: 100% !important;
+      min-width: 100% !important;
+      max-width: 100% !important;
+      scroll-snap-align: start !important;
+      box-sizing: border-box !important;
+    }
+
+    #catalog .folder-body {
+      width: 100% !important;
+      min-width: 0 !important;
+      box-sizing: border-box !important;
+      padding-left: 24px !important;
+      padding-right: 24px !important;
+      overflow: hidden !important;
+    }
+
+    #catalog .c-name {
+      max-width: 100% !important;
+      padding-right: 92px !important;
+      font-size: 22px !important;
+      overflow-wrap: anywhere;
+    }
+
+    #quiz {
+      padding: 48px 0 !important;
+      overflow: hidden !important;
+    }
+
+    #quiz .quiz-card {
+      width: 100% !important;
+      max-width: none !important;
+      margin: 0 !important;
+      border-radius: 0 !important;
+      padding: 36px 16px !important;
+      box-sizing: border-box !important;
+    }
+
+    .quiz-title {
+      width: 100% !important;
+      max-width: 100% !important;
+      padding: 0 4px !important;
+      font-size: clamp(30px, 9.4vw, 38px) !important;
+      line-height: 1 !important;
+      text-wrap: balance;
+      box-sizing: border-box !important;
+    }
+
+    .quiz-form-wrap {
+      width: 100% !important;
+      max-width: none !important;
+      margin-top: 32px !important;
+      padding: 0 !important;
+      box-sizing: border-box !important;
+    }
+
+    .quiz-form-card {
+      width: 100% !important;
+      max-width: 100% !important;
+      box-sizing: border-box !important;
+    }
+
+    .quiz-form-content {
+      padding: 24px 20px !important;
+    }
+
+    .step-two-actions {
+      width: 100% !important;
+      flex-direction: column !important;
+    }
+
+    .step-two-actions > button {
+      width: 100% !important;
+      min-width: 100% !important;
+      flex: 1 1 100% !important;
+      box-sizing: border-box !important;
+    }
+  }
+
+  @media (max-width: 360px) {
+    .hero-title {
+      font-size: clamp(25px, 7.8vw, 29px) !important;
+    }
+
+    #catalog .folder-body {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    }
+
+    #catalog .c-name {
+      padding-right: 82px !important;
+      font-size: 20px !important;
+    }
+
+    #quiz .quiz-card {
+      padding-left: 12px !important;
+      padding-right: 12px !important;
+    }
+
+    .quiz-form-content {
+      padding-left: 16px !important;
+      padding-right: 16px !important;
+    }
+  }
+</style>
 <script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
 <script src="./support.js"></script>
@@ -158,8 +318,8 @@
   </nav>
 
   <!-- HERO (centered) -->
-    <div style="display: flex; flex-direction: column; align-items: center; justify-content: flex-start; text-align: center; max-width: 1280px; width: 100%; margin: 0 auto; padding: clamp(64px, 8vw, 96px) 24px 0; position: relative; z-index: 2;">
-    <h1 class="grad-heading hero-intro" style="display: flex; flex-direction: column; align-items: center; position: relative; z-index: 2; font-family: 'Anticva', serif; font-weight: 400; letter-spacing: -1px; font-size: clamp(40px, 7vw, 88px); line-height: 1;"><span style="display: block; white-space: nowrap; line-height: 1.3">СЛУЖБА ДОСТАВКИ</span><span style="display: block; white-space: nowrap; line-height: 0.8">ЭКСПРЕСС-ЧАР</span></h1><p class="hero-intro" style="font-family: 'Iosevka', monospace; color: #8A8A86; font-size: clamp(15px, 1.8vw, 18px); line-height: 1.55; margin-top: 16px; max-width: 600px; position: relative; z-index: 2">Оформляем по всем правилам. Доставляем в тот же вечер.</p><div class="hero-intro" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; margin-top: 40px; position: relative; z-index: 2">
+    <div class="hero-shell" style="display: flex; flex-direction: column; align-items: center; justify-content: flex-start; text-align: center; max-width: 1280px; width: 100%; margin: 0 auto; padding: clamp(64px, 8vw, 96px) 24px 0; position: relative; z-index: 2;">
+    <h1 class="grad-heading hero-intro hero-title" style="display: flex; flex-direction: column; align-items: center; position: relative; z-index: 2; font-family: 'Anticva', serif; font-weight: 400; letter-spacing: -1px; font-size: clamp(40px, 7vw, 88px); line-height: 1;"><span style="display: block; white-space: nowrap; line-height: 1.3">СЛУЖБА ДОСТАВКИ</span><span style="display: block; white-space: nowrap; line-height: 0.8">ЭКСПРЕСС-ЧАР</span></h1><p class="hero-intro" style="font-family: 'Iosevka', monospace; color: #8A8A86; font-size: clamp(15px, 1.8vw, 18px); line-height: 1.55; margin-top: 16px; max-width: 600px; position: relative; z-index: 2">Оформляем по всем правилам. Доставляем в тот же вечер.</p><div class="hero-intro" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; margin-top: 40px; position: relative; z-index: 2">
       <a href="#quiz" class="hero-btn fill-btn" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-family: 'Iosevka', monospace; font-weight: 600; font-size: 18px; background: #F2F0E9; color: #000000; border: none; padding: 16px 24px; border-radius: 8px; cursor: pointer; text-decoration: none; transition: transform 0.08s ease, color 0.15s ease" style-active="transform: scale(0.97);">Подобрать заклинание<svg width="26" height="26" viewBox="0 0 24 24" fill="none" style="flex-shrink: 0;"><path d="M11 5C11 5.742 11.733 6.85 12.475 7.78C13.429 8.98 14.569 10.027 15.876 10.826C16.856 11.425 18.044 12 19 12M19 12C18.044 12 16.855 12.575 15.876 13.174C14.569 13.974 13.429 15.021 12.475 16.219C11.733 17.15 11 18.26 11 19M19 12H6M6 10V14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
       <a href="#catalog" class="hero-btn" style="display: inline-flex; align-items: center; justify-content: center; font-family: 'Iosevka', monospace; font-weight: 600; font-size: 18px; background: transparent; color: #F2F0E9; border: 1px solid rgba(242,240,233,0.3); padding: 16px 24px; border-radius: 8px; cursor: pointer; text-decoration: none; transition: transform 0.08s ease, border-color 0.15s ease, color 0.15s ease" style-hover="border-color: #A5372B; color: #A5372B;" style-active="transform: scale(0.97);">Открыть каталог</a>
     </div>
@@ -230,17 +390,17 @@
   <div style="position: absolute; inset: 0; background-image: url('./images/paper-texture.jpg'); background-size: cover; background-position: center; mix-blend-mode: multiply; opacity: 0.5; pointer-events: none; z-index: 0;"></div>
   <div style="position: absolute; inset: 0; background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22180%22%20height%3D%22180%22%3E%3Cfilter%20id%3D%22n%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.9%22%20numOctaves%3D%222%22%2F%3E%3CfeColorMatrix%20values%3D%220%200%200%200%201%200%200%200%200%201%200%200%200%200%201%200%200%200%200.5%200%22%2F%3E%3C%2Ffilter%3E%3Crect%20width%3D%22180%22%20height%3D%22180%22%20filter%3D%22url(%23n)%22%2F%3E%3C%2Fsvg%3E'); background-repeat: repeat; background-size: 180px 180px; mix-blend-mode: multiply; opacity: 0.1; pointer-events: none; z-index: 0;"></div>
   <div data-reveal="" style="margin: 0 auto; padding: 0 8px; text-align: center; position: relative; z-index: 1; display: flex; flex-direction: column; justify-content: center; align-items: center">
-    <h2 style="font-family: 'Anticva', serif; font-weight: 400; letter-spacing: -1px; text-transform: uppercase; font-size: clamp(30px, 4.2vw, 56px); line-height: 0.85; color: #241D14; width: 800px">Не знаете, что выбрать?</h2>
+    <h2 class="quiz-title" style="font-family: 'Anticva', serif; font-weight: 400; letter-spacing: -1px; text-transform: uppercase; font-size: clamp(30px, 4.2vw, 56px); line-height: 0.85; color: #241D14; width: 800px">Не знаете, что выбрать?</h2>
     <p style="font-family: 'Iosevka', monospace; color: #7C6F57; font-size: clamp(13px, 1.4vw, 15px); margin-top: 16px">Заполните заявку — подберём за минуту</p>
   </div>
 
-  <div style="max-width: 640px; margin: 48px auto 0; padding: 0 8px; position: relative; z-index: 1;">
+  <div class="quiz-form-wrap" style="max-width: 640px; margin: 48px auto 0; padding: 0 8px; position: relative; z-index: 1;">
     <!-- tab -->
     <div style="display: inline-block; margin-left: 0; margin-bottom: -1px; position: relative; z-index: 1; background: #F5EFE0; border: 1px solid #D8C9A6; border-bottom: none; border-radius: 12px 12px 0 0; padding: 8px 16px; font-family: 'Iosevka', monospace; font-size: 11px; font-weight: 600; letter-spacing: 0.08em; color: #A5372B; padding-top: 12px; padding-bottom: 8px; padding-left: 16px; padding-right: 16px">{{ w.tab }}</div>
 
-    <div style="background: #F5EFE0; border: 1px solid #D8C9A6; border-radius: 0 12px 12px 12px; box-shadow: 0 18px 50px rgba(36,29,20,0.12); overflow: hidden;">
+    <div class="quiz-form-card" style="background: #F5EFE0; border: 1px solid #D8C9A6; border-radius: 0 12px 12px 12px; box-shadow: 0 18px 50px rgba(36,29,20,0.12); overflow: hidden;">
       
-      <div style="height: 10px; background-image: radial-gradient(circle, #B8A47C 1.6px, transparent 2px); background-size: 14px 10px; background-position: center; background-repeat: repeat-x; margin-top: 16px; margin-bottom: 8px; margin-left: 16px; margin-right: 16px; padding-left: 0px; padding-right: 0px; padding-top: 0px; padding-bottom: 0px; opacity: 0.5"></div><div style="padding: 28px; padding-top: 32px; padding-right: 32px; padding-bottom: 32px; padding-left: 32px">
+      <div style="height: 10px; background-image: radial-gradient(circle, #B8A47C 1.6px, transparent 2px); background-size: 14px 10px; background-position: center; background-repeat: repeat-x; margin-top: 16px; margin-bottom: 8px; margin-left: 16px; margin-right: 16px; padding-left: 0px; padding-right: 0px; padding-top: 0px; padding-bottom: 0px; opacity: 0.5"></div><div class="quiz-form-content" style="padding: 28px; padding-top: 32px; padding-right: 32px; padding-bottom: 32px; padding-left: 32px">
       <!-- step indicator -->
       <div style="display: flex; gap: 8px; margin-bottom: 32px">
         <sc-for list="{{ w.dots }}" as="d" hint-placeholder-count="4">
@@ -278,7 +438,7 @@
             </div>
           </div>
           <p style="font-family: 'Iosevka', monospace; font-size: 11px; color: #7C6F57; margin-top: 16px;">Совпадение по ситуации — 98%</p>
-          <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px;">
+          <div class="step-two-actions" style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px;">
             <button onClick="{{ w.toStep3 }}" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; flex: 1; min-width: 160px; font-family: 'Iosevka', monospace; font-weight: 600; font-size: 15px; background: #241D14; color: #F5EFE0; border: none; padding: 15px; border-radius: 8px; cursor: pointer; transition: transform .08s ease, background .15s ease;" style-hover="background: #3A2E1F;" style-active="transform: scale(0.98);">Оформить заказ<svg width="24" height="24" viewBox="0 0 24 24" fill="none" style="flex-shrink: 0;"><path d="M11 5C11 5.742 11.733 6.85 12.475 7.78C13.429 8.98 14.569 10.027 15.876 10.826C16.856 11.425 18.044 12 19 12M19 12C18.044 12 16.855 12.575 15.876 13.174C14.569 13.974 13.429 15.021 12.475 16.219C11.733 17.15 11 18.26 11 19M19 12H6M6 10V14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
             <button onClick="{{ w.back1 }}" style="font-family: 'Iosevka', monospace; font-size: 13px; background: transparent; color: #7C6F57; border: 1px solid #D8C9A6; padding: 16px; border-radius: 8px; cursor: pointer; transition: color .15s ease, border-color .15s ease;" style-hover="color: #241D14; border-color: #241D14;">Выбрать другое</button>
           </div>
@@ -679,7 +839,7 @@ class Component extends DCLogic {
       { label: "Нет вдохновения", spell: { name: "Вернуть вдохновение", cat: "[ НАСТРОЕНИЕ ]", effect: "поток идей на 3 дня, побочно — болтливость", delivery: "1 час" } },
       { label: "Неловкая ситуация", spell: { name: "Отменить неловкую паузу", cat: "[ НАСТРОЕНИЕ ]", effect: "возвращает разговор в нужное русло", delivery: "мгновенно (портал)" } },
     ];
-    const tabs = { 1: "ЗАЯВКА:  ШАГ 1/4", 2: "ПОДБОР ШАГ 2/4", 3: "ОФОРМЛЕНИЕ ШАГ 3/4", 4: "ЗАКАЗ ШАГ 4/4" };
+    const tabs = { 1: "ЗАЯВКА:  ШАГ 1/4", 2: "ПОДБОР ШАГ 2/4", 3: "ОФОРМЛЕНИЕ ШАГ 3/4", 4: "ЗАКАЗ ШАГ 4/4" };
 
     const dots = [1, 2, 3, 4].map((n) => ({
       style: [
